@@ -1,0 +1,25 @@
+<!-- 駅メモ！でんこ管理アプリ - ファビコン用SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- 背景 -->
+  <rect width="32" height="32" rx="6" fill="#667eea"/>
+  
+  <!-- 電車のボディ -->
+  <rect x="4" y="12" width="24" height="12" rx="2" fill="#ffffff"/>
+  
+  <!-- 電車の窓 -->
+  <rect x="6" y="14" width="4" height="4" rx="1" fill="#667eea"/>
+  <rect x="12" y="14" width="4" height="4" rx="1" fill="#667eea"/>
+  <rect x="18" y="14" width="4" height="4" rx="1" fill="#667eea"/>
+  <rect x="24" y="14" width="2" height="4" rx="1" fill="#667eea"/>
+  
+  <!-- 電車の車輪 -->
+  <circle cx="8" cy="26" r="2" fill="#495057"/>
+  <circle cx="24" cy="26" r="2" fill="#495057"/>
+  
+  <!-- でんこのシンボル（ハート） -->
+  <path d="M16 8 C14 6, 11 6, 11 9 C11 12, 16 16, 16 16 S21 12, 21 9 C21 6, 18 6, 16 8 Z" fill="#ff6b9d"/>
+  
+  <!-- 線路 -->
+  <rect x="0" y="28" width="32" height="1" fill="#6c757d"/>
+  <rect x="0" y="30" width="32" height="1" fill="#6c757d"/>
+</svg>

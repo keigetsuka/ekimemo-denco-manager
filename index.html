@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>駅メモ！でんこ管理アプリ</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- ヘッダー -->
+        <header class="header">
+            <h1>駅メモ！でんこ管理アプリ</h1>
+            <p>286体のでんこ（オリジナル163体・エクストラ123体）の所持状況とレベル情報を管理</p>
+            <nav class="page-nav" style="margin-top: 15px;">
+                <a href="nekopanchi.html" class="btn btn-info">ねこぱんち計算機</a>
+            </nav>
+            <div class="notice" style="background: #e3f2fd; padding: 10px; border-radius: 5px; margin-top: 10px; font-size: 0.9rem; color: #1565c0;">
+                <strong>📌 重要:</strong> このアプリケーションはHTTPサーバー経由でアクセスしてください。
+                <br><small>ファイルを直接開くとdenko_data.jsonが読み込めません。</small>
+            </div>
+        </header>
+
+        <!-- コントロールパネル -->
+        <div class="control-panel">
+            <!-- タブ切り替え -->
+            <div class="tab-container">
+                <button class="tab-button active" data-tab="original">オリジナル</button>
+                <button class="tab-button" data-tab="extra">エクストラ</button>
+            </div>
+
+            <!-- フィルタ・ソート -->
+            <div class="filter-sort-container">
+                <div class="filter-section">
+                    <h3>フィルタ</h3>
+                    <div class="filter-row">
+                        <div class="filter-item">
+                            <label for="name-filter">名前:</label>
+                            <input type="text" id="name-filter" placeholder="でんこ名で検索">
+                        </div>
+                        <div class="filter-item">
+                            <label for="type-filter">タイプ:</label>
+                            <select id="type-filter">
+                                <option value="">全て</option>
+                                <option value="トリックスター">トリックスター</option>
+                                <option value="サポーター">サポーター</option>
+                                <option value="ディフェンダー">ディフェンダー</option>
+                                <option value="アタッカー">アタッカー</option>
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <label for="attribute-filter">属性:</label>
+                            <select id="attribute-filter">
+                                <option value="">全て</option>
+                                <option value="heat">heat</option>
+                                <option value="cool">cool</option>
+                                <option value="eco">eco</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-row">
+                        <div class="filter-item">
+                            <label for="owned-filter">所持状況:</label>
+                            <select id="owned-filter">
+                                <option value="">全て</option>
+                                <option value="owned">所持</option>
+                                <option value="not-owned">未所持</option>
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <label for="level-min">レベル範囲:</label>
+                            <div class="range-inputs">
+                                <input type="number" id="level-min" min="1" max="80" placeholder="最小">
+                                <span>～</span>
+                                <input type="number" id="level-max" min="1" max="80" placeholder="最大">
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <label for="class-min">クラス範囲:</label>
+                            <div class="range-inputs">
+                                <input type="number" id="class-min" min="1" max="12" placeholder="最小">
+                                <span>～</span>
+                                <input type="number" id="class-max" min="1" max="12" placeholder="最大">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sort-section">
+                    <h3>ソート</h3>
+                    <div class="sort-controls">
+                        <label for="sort-by">並び順:</label>
+                        <select id="sort-by">
+                            <option value="id">番号順</option>
+                            <option value="name">名前順</option>
+                            <option value="level">レベル順</option>
+                            <option value="class">クラス順</option>
+                        </select>
+                        <button id="sort-direction" class="sort-direction-btn">昇順 ↑</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 統計情報 -->
+            <div class="stats-section">
+                <div class="stat-item">
+                    <span class="stat-label">総数:</span>
+                    <span id="total-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">所持:</span>
+                    <span id="owned-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">未所持:</span>
+                    <span id="not-owned-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">平均レベル:</span>
+                    <span id="average-level">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">平均クラス:</span>
+                    <span id="average-class">0</span>
+                </div>
+            </div>
+
+            <!-- データ管理 -->
+            <div class="data-management">
+                <button id="show-graph" class="btn btn-info">データをグラフ表示</button>
+                <button id="export-data" class="btn btn-secondary">データをエクスポート</button>
+                <input type="file" id="import-data" accept=".json" style="display: none;">
+                <button id="import-data-btn" class="btn btn-secondary">データをインポート</button>
+            </div>
+        </div>
+
+        <!-- でんこリスト -->
+        <div class="denko-list-container">
+            <div id="denko-list" class="denko-list">
+                <!-- でんこアイテムがここに動的に追加されます -->
+            </div>
+        </div>
+    </div>
+
+    <!-- グラフ表示モーダル -->
+    <div id="graph-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>レベル分布グラフ</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="graph-controls">
+                    <label>
+                        <input type="radio" name="graph-type" value="original" checked>
+                        オリジナルでんこ
+                    </label>
+                    <label>
+                        <input type="radio" name="graph-type" value="extra">
+                        エクストラでんこ
+                    </label>
+                    <label>
+                        <input type="radio" name="graph-type" value="all">
+                        全体
+                    </label>
+                </div>
+                <canvas id="level-chart" width="800" height="400"></canvas>
+                <div class="graph-stats">
+                    <div class="stat-row">
+                        <span class="stat-label">対象でんこ数:</span>
+                        <span id="graph-total-count">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">所持でんこ数:</span>
+                        <span id="graph-owned-count">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">平均レベル:</span>
+                        <span id="graph-average-level">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
