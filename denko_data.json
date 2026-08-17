@@ -3,6 +3,7 @@
     {
       "id": 0,
       "name": "のぞみ",
+      "name_en": "Nozomi",
       "type": "サポーター",
       "attribute": "flat",
       "color": "青",
@@ -12,6 +13,7 @@
     {
       "id": 1,
       "name": "黄陽セリア",
+      "name_en": "Koyo Seria",
       "type": "サポーター",
       "attribute": "eco",
       "color": "黄",
@@ -21,6 +23,7 @@
     {
       "id": 2,
       "name": "為栗メロ",
+      "name_en": "Shiteguri Mero",
       "type": "アタッカー",
       "attribute": "eco",
       "color": "橙",
@@ -30,6 +33,7 @@
     {
       "id": 3,
       "name": "新阪ルナ",
+      "name_en": "Shinsaka Luna",
       "type": "ディフェンダー",
       "attribute": "cool",
       "color": "紫",
@@ -39,6 +43,7 @@
     {
       "id": 4,
       "name": "恋浜みろく",
+      "name_en": "Koigahama Miroku",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "赤",
@@ -48,6 +53,7 @@
     {
       "id": 5,
       "name": "黄陽レイカ",
+      "name_en": "Koyo Reika",
       "type": "サポーター",
       "attribute": "heat",
       "color": "桃",
@@ -57,6 +63,7 @@
     {
       "id": 6,
       "name": "シャルロッテ＝フォン＝ハノーファー",
+      "name_en": "Charlotte von Hannover",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "黄",
@@ -66,6 +73,7 @@
     {
       "id": 7,
       "name": "大月シーナ",
+      "name_en": "Otsuki Shina",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "青",
@@ -75,6 +83,7 @@
     {
       "id": 8,
       "name": "天下さや",
+      "name_en": "Tenga Saya",
       "type": "アタッカー",
       "attribute": "cool",
       "color": "紫",
@@ -84,6 +93,7 @@
     {
       "id": 9,
       "name": "花畑もえ",
+      "name_en": "Hanabatake Moe",
       "type": "サポーター",
       "attribute": "eco",
       "color": "黄",
@@ -93,6 +103,7 @@
     {
       "id": 10,
       "name": "象潟いろは",
+      "name_en": "Kisakata Iroha",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "緑",
@@ -102,6 +113,7 @@
     {
       "id": 11,
       "name": "粟生津しいら",
+      "name_en": "Aozu Shiira",
       "type": "ディフェンダー",
       "attribute": "eco",
       "color": "青",
@@ -111,6 +123,7 @@
     {
       "id": 12,
       "name": "有栖川もぼ",
+      "name_en": "Arisugawa Mobo",
       "type": "ディフェンダー",
       "attribute": "cool",
       "color": "橙",
@@ -120,6 +133,7 @@
     {
       "id": 13,
       "name": "新居浜いずな",
+      "name_en": "Niihama Izuna",
       "type": "ディフェンダー",
       "attribute": "heat",
       "color": "青",
@@ -129,6 +143,7 @@
     {
       "id": 14,
       "name": "美深ふぶ",
+      "name_en": "Bifuka Fubu",
       "type": "サポーター",
       "attribute": "cool",
       "color": "紫",
@@ -138,6 +153,7 @@
     {
       "id": 15,
       "name": "鹿沼りんご",
+      "name_en": "Kanuma Ringo",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "緑",
@@ -147,6 +163,7 @@
     {
       "id": 16,
       "name": "ニャッシュ",
+      "name_en": "Nyash",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "青",
@@ -156,6 +173,7 @@
     {
       "id": 17,
       "name": "ダッチュー",
+      "name_en": "Dacchu",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "桃",
@@ -165,6 +183,7 @@
     {
       "id": 18,
       "name": "汀良いちほ",
+      "name_en": "Tera Ichiho",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "緑",
@@ -174,6 +193,7 @@
     {
       "id": 19,
       "name": "美唄イムラ",
+      "name_en": "Bibai Imura",
       "type": "アタッカー",
       "attribute": "eco",
       "color": "青",
@@ -183,6 +203,7 @@
     {
       "id": 20,
       "name": "丸地にころ",
+      "name_en": "Maruchi Nikoro",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "黄",
@@ -192,6 +213,7 @@
     {
       "id": 21,
       "name": "王子しぐれ",
+      "name_en": "Oji Shigure",
       "type": "サポーター",
       "attribute": "cool",
       "color": "紫",
@@ -201,6 +223,7 @@
     {
       "id": 22,
       "name": "巽レン",
+      "name_en": "Tatsumi Ren",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "赤",
@@ -210,6 +233,7 @@
     {
       "id": 23,
       "name": "八潮みらい",
+      "name_en": "Yashio Mirai",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "緑",
@@ -219,6 +243,7 @@
     {
       "id": 24,
       "name": "ベアトリス＝ファン＝ライツェ",
+      "name_en": "Beatrice van Leidse",
       "type": "ディフェンダー",
       "attribute": "cool",
       "color": "青",
@@ -228,6 +253,7 @@
     {
       "id": 25,
       "name": "新百合うらら",
+      "name_en": "Shinyuri Urara",
       "type": "サポーター",
       "attribute": "cool",
       "color": "橙",
@@ -237,6 +263,7 @@
     {
       "id": 26,
       "name": "新百合ほこね",
+      "name_en": "Shinyuri Hokone",
       "type": "アタッカー",
       "attribute": "cool",
       "color": "橙",
@@ -246,6 +273,7 @@
     {
       "id": 27,
       "name": "苔縄やちよ",
+      "name_en": "Kokenawa Yachiyo",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -255,6 +283,7 @@
     {
       "id": 28,
       "name": "京橋リオナ",
+      "name_en": "Kyobashi Riona",
       "type": "アタッカー",
       "attribute": "cool",
       "color": "黄",
@@ -264,6 +293,7 @@
     {
       "id": 29,
       "name": "作草部チコ",
+      "name_en": "Sakusabe Chiko",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -273,6 +303,7 @@
     {
       "id": 30,
       "name": "八雲レーノ",
+      "name_en": "Yakumo Reno",
       "type": "アタッカー",
       "attribute": "eco",
       "color": "桃",
@@ -282,6 +313,7 @@
     {
       "id": 31,
       "name": "新居浜ありす",
+      "name_en": "Niihama Alice",
       "type": "ディフェンダー",
       "attribute": "heat",
       "color": "青",
@@ -291,6 +323,7 @@
     {
       "id": 32,
       "name": "神居コタン",
+      "name_en": "Kamui Kotan",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "赤",
@@ -300,6 +333,7 @@
     {
       "id": 33,
       "name": "賢島エリア",
+      "name_en": "Kashikojima Eria",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "青",
@@ -309,6 +343,7 @@
     {
       "id": 34,
       "name": "碇ヶ関ひいる",
+      "name_en": "Ikarigaseki Hiiru",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -318,6 +353,7 @@
     {
       "id": 35,
       "name": "神畑いおり",
+      "name_en": "Kabatake Iori",
       "type": "ディフェンダー",
       "attribute": "eco",
       "color": "緑",
@@ -327,6 +363,7 @@
     {
       "id": 36,
       "name": "蓮台寺ミオ",
+      "name_en": "Rendaiji Mio",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -336,6 +373,7 @@
     {
       "id": 37,
       "name": "美談みこと",
+      "name_en": "Midami Mikoto",
       "type": "サポーター",
       "attribute": "eco",
       "color": "桃",
@@ -345,6 +383,7 @@
     {
       "id": 38,
       "name": "美談くに",
+      "name_en": "Midami Kuni",
       "type": "ディフェンダー",
       "attribute": "eco",
       "color": "桃",
@@ -354,6 +393,7 @@
     {
       "id": 39,
       "name": "尺土るる",
+      "name_en": "Shakudo Ruru",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "黄",
@@ -363,6 +403,7 @@
     {
       "id": 40,
       "name": "白鳥ハル",
+      "name_en": "Shirotori Haru",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "青",
@@ -372,6 +413,7 @@
     {
       "id": 41,
       "name": "南郷にちな",
+      "name_en": "Nango Nichina",
       "type": "ディフェンダー",
       "attribute": "heat",
       "color": "緑",
@@ -381,6 +423,7 @@
     {
       "id": 42,
       "name": "青砥そら",
+      "name_en": "Aoto Sora",
       "type": "アタッカー",
       "attribute": "cool",
       "color": "橙",
@@ -390,6 +433,7 @@
     {
       "id": 43,
       "name": "坂出アサ",
+      "name_en": "Sakaide Asa",
       "type": "サポーター",
       "attribute": "eco",
       "color": "赤",
@@ -399,6 +443,7 @@
     {
       "id": 44,
       "name": "木古内さいか",
+      "name_en": "Kikonai Saika",
       "type": "アタッカー",
       "attribute": "eco",
       "color": "紫",
@@ -408,6 +453,7 @@
     {
       "id": 45,
       "name": "阿佐ヶ谷カノン",
+      "name_en": "Asagaya Kanon",
       "type": "サポーター",
       "attribute": "cool",
       "color": "黄",
@@ -417,6 +463,7 @@
     {
       "id": 46,
       "name": "黒崎あたる",
+      "name_en": "Kurosaki Ataru",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -426,6 +473,7 @@
     {
       "id": 47,
       "name": "三条なつめ",
+      "name_en": "Sanjo Natsume",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "橙",
@@ -435,6 +483,7 @@
     {
       "id": 48,
       "name": "小鳥谷スピカ",
+      "name_en": "Kozuya Spica",
       "type": "サポーター",
       "attribute": "heat",
       "color": "桃",
@@ -444,6 +493,7 @@
     {
       "id": 49,
       "name": "勿来メイ",
+      "name_en": "Nakoso Mei",
       "type": "ディフェンダー",
       "attribute": "eco",
       "color": "赤",
@@ -453,6 +503,7 @@
     {
       "id": 50,
       "name": "豊栄なほ",
+      "name_en": "Toyosaka Naho",
       "type": "ディフェンダー",
       "attribute": "cool",
       "color": "橙",
@@ -462,6 +513,7 @@
     {
       "id": 51,
       "name": "敷島ヒメギ",
+      "name_en": "Shikishima Himegi",
       "type": "サポーター",
       "attribute": "heat",
       "color": "緑",
@@ -471,6 +523,7 @@
     {
       "id": 52,
       "name": "浦佐ノア",
+      "name_en": "Urasa Noa",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "紫",
@@ -480,6 +533,7 @@
     {
       "id": 53,
       "name": "白浜マリン",
+      "name_en": "Shirahama Marin",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "黄",
@@ -489,6 +543,7 @@
     {
       "id": 54,
       "name": "友荷なより",
+      "name_en": "Yuni Nayori",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "橙",
@@ -498,6 +553,7 @@
     {
       "id": 55,
       "name": "本宿ひまり",
+      "name_en": "Motojuku Himari",
       "type": "サポーター",
       "attribute": "cool",
       "color": "赤",
@@ -507,6 +563,7 @@
     {
       "id": 56,
       "name": "橿原らら",
+      "name_en": "Kashihara Rara",
       "type": "ディフェンダー",
       "attribute": "heat",
       "color": "橙",
@@ -516,6 +573,7 @@
     {
       "id": 57,
       "name": "岩国みづほ",
+      "name_en": "Iwakuni Mizuho",
       "type": "サポーター",
       "attribute": "eco",
       "color": "緑",
@@ -525,6 +583,7 @@
     {
       "id": 58,
       "name": "妹尾まりか",
+      "name_en": "Senoo Marika",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "紫",
@@ -534,6 +593,7 @@
     {
       "id": 59,
       "name": "嵯峨野もみじ",
+      "name_en": "Sagano Momiji",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "黄",
@@ -543,6 +603,7 @@
     {
       "id": 60,
       "name": "倶利伽羅しおり",
+      "name_en": "Kurikara Shiori",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "黄",
@@ -552,6 +613,7 @@
     {
       "id": 61,
       "name": "深遊ちとせ",
+      "name_en": "Miyu Chitose",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "黄",
@@ -561,6 +623,7 @@
     {
       "id": 62,
       "name": "作草部マコ",
+      "name_en": "Sakusabe Mako",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -570,6 +633,7 @@
     {
       "id": 63,
       "name": "根雨つむぎ",
+      "name_en": "Neu Tsumugi",
       "type": "サポーター",
       "attribute": "eco",
       "color": "赤",
@@ -579,6 +643,7 @@
     {
       "id": 64,
       "name": "角館あけひ",
+      "name_en": "Kakunodate Akehi",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "赤",
@@ -588,6 +653,7 @@
     {
       "id": 65,
       "name": "湯前ひびき",
+      "name_en": "Yunomae Hibiki",
       "type": "ディフェンダー",
       "attribute": "eco",
       "color": "黄",
@@ -597,6 +663,7 @@
     {
       "id": 66,
       "name": "蛍茶屋みなも",
+      "name_en": "Hotarujaya Minamo",
       "type": "アタッカー",
       "attribute": "cool",
       "color": "緑",
@@ -606,6 +673,7 @@
     {
       "id": 67,
       "name": "窪川まぜ",
+      "name_en": "Kubokawa Maze",
       "type": "ディフェンダー",
       "attribute": "heat",
       "color": "青",
@@ -615,6 +683,7 @@
     {
       "id": 68,
       "name": "七耀みつる",
+      "name_en": "Shichiyo Mitsuru",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "赤",
@@ -624,6 +693,7 @@
     {
       "id": 69,
       "name": "羽貫ミユ",
+      "name_en": "Hanuki Miyu",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "桃",
@@ -633,6 +703,7 @@
     {
       "id": 70,
       "name": "桂みやび",
+      "name_en": "Katsura Miyabi",
       "type": "ディフェンダー",
       "attribute": "cool",
       "color": "赤",
@@ -642,6 +713,7 @@
     {
       "id": 71,
       "name": "大雄山るり",
+      "name_en": "Daiyuzan Ruri",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -651,6 +723,7 @@
     {
       "id": 72,
       "name": "蓮台寺ナギサ",
+      "name_en": "Rendaiji Nagisa",
       "type": "アタッカー",
       "attribute": "cool",
       "color": "青",
@@ -660,6 +733,7 @@
     {
       "id": 73,
       "name": "高岡やまと",
+      "name_en": "Takaoka Yamato",
       "type": "サポーター",
       "attribute": "eco",
       "color": "黄",
@@ -669,6 +743,7 @@
     {
       "id": 74,
       "name": "中津コヨイ",
+      "name_en": "Nakatsu Koyoi",
       "type": "ディフェンダー",
       "attribute": "eco",
       "color": "赤",
@@ -678,6 +753,7 @@
     {
       "id": 75,
       "name": "阿下喜ニナ",
+      "name_en": "Ageki Nina",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "緑",
@@ -687,6 +763,7 @@
     {
       "id": 76,
       "name": "上ノ山ゆのか",
+      "name_en": "Kaminoyama Yunoka",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "緑",
@@ -696,6 +773,7 @@
     {
       "id": 77,
       "name": "リト=フォン=シュトゥットガルト",
+      "name_en": "Reto von Stuttgart",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "桃",
@@ -705,6 +783,7 @@
     {
       "id": 78,
       "name": "海部なる",
+      "name_en": "Kaifu Naru",
       "type": "アタッカー",
       "attribute": "cool",
       "color": "青",
@@ -714,6 +793,7 @@
     {
       "id": 79,
       "name": "唐津シズ",
+      "name_en": "Karatsu Shizu",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -723,6 +803,7 @@
     {
       "id": 80,
       "name": "那珂湊ねも",
+      "name_en": "Nakaminato Nemo",
       "type": "アタッカー",
       "attribute": "eco",
       "color": "紫",
@@ -732,6 +813,7 @@
     {
       "id": 81,
       "name": "郡元ゆう",
+      "name_en": "Korimoto Yu",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "緑",
@@ -741,6 +823,7 @@
     {
       "id": 82,
       "name": "八日市ゆかり",
+      "name_en": "Yokaichi Yukari",
       "type": "サポーター",
       "attribute": "eco",
       "color": "紫",
@@ -750,6 +833,7 @@
     {
       "id": 83,
       "name": "信楽くろがね",
+      "name_en": "Shigaraki Kurogane",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "黄",
@@ -759,6 +843,7 @@
     {
       "id": 84,
       "name": "汐入みそら",
+      "name_en": "Shioiri Misora",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -768,6 +853,7 @@
     {
       "id": 85,
       "name": "品川めぐる",
+      "name_en": "Shinagawa Meguru",
       "type": "アタッカー",
       "attribute": "eco",
       "color": "緑",
@@ -777,6 +863,7 @@
     {
       "id": 86,
       "name": "蓮台寺ミナト",
+      "name_en": "Rendaiji Minato",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -786,6 +873,7 @@
     {
       "id": 87,
       "name": "観音町ひめ",
+      "name_en": "Kanonmachi Hime",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "緑",
@@ -795,6 +883,7 @@
     {
       "id": 88,
       "name": "天王寺たまき",
+      "name_en": "Tennoji Tamaki",
       "type": "サポーター",
       "attribute": "heat",
       "color": "橙",
@@ -804,6 +893,7 @@
     {
       "id": 89,
       "name": "総天ギンカ",
+      "name_en": "Stain Ginka",
       "type": "ディフェンダー",
       "attribute": "eco",
       "color": "赤",
@@ -813,6 +903,7 @@
     {
       "id": 90,
       "name": "牧之郷あい",
+      "name_en": "Makinoko Ai",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -822,6 +913,7 @@
     {
       "id": 91,
       "name": "岩切よしの",
+      "name_en": "Iwakiri Yoshino",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "緑",
@@ -831,6 +923,7 @@
     {
       "id": 92,
       "name": "諸星すばる",
+      "name_en": "Moroboshi Subaru",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -840,6 +933,7 @@
     {
       "id": 93,
       "name": "美々津あさひ",
+      "name_en": "Mimitsu Asahi",
       "type": "ディフェンダー",
       "attribute": "heat",
       "color": "赤",
@@ -849,6 +943,7 @@
     {
       "id": 94,
       "name": "下新ゆき",
+      "name_en": "Shimonii Yuki",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -858,6 +953,7 @@
     {
       "id": 95,
       "name": "鮎川ひな",
+      "name_en": "Ayukawa Hina",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "黄",
@@ -867,6 +963,7 @@
     {
       "id": 96,
       "name": "荻窪アヤ",
+      "name_en": "Ogikubo Aya",
       "type": "サポーター",
       "attribute": "heat",
       "color": "紫",
@@ -876,6 +973,7 @@
     {
       "id": 97,
       "name": "安来あまね",
+      "name_en": "Yasugi Amane",
       "type": "アタッカー",
       "attribute": "cool",
       "color": "緑",
@@ -885,6 +983,7 @@
     {
       "id": 98,
       "name": "新鶴まふゆ",
+      "name_en": "Niitsuru Mafuyu",
       "type": "サポーター",
       "attribute": "eco",
       "color": "青",
@@ -894,6 +993,7 @@
     {
       "id": 99,
       "name": "指宿おとめ",
+      "name_en": "Ibusuki Otome",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "赤",
@@ -903,6 +1003,7 @@
     {
       "id": 100,
       "name": "恋山形ちづ",
+      "name_en": "Koiyamagata Chizu",
       "type": "サポーター",
       "attribute": "cool",
       "color": "桃",
@@ -912,6 +1013,7 @@
     {
       "id": 101,
       "name": "田原町つばさ",
+      "name_en": "Tawaramachi Tsubasa",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "黄",
@@ -921,6 +1023,7 @@
     {
       "id": 102,
       "name": "八戸ましろ",
+      "name_en": "Hachinohe Mashiro",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "青",
@@ -930,6 +1033,7 @@
     {
       "id": 103,
       "name": "江ノ島ナツミ",
+      "name_en": "Enoshima Natsumi",
       "type": "ディフェンダー",
       "attribute": "cool",
       "color": "青",
@@ -939,6 +1043,7 @@
     {
       "id": 104,
       "name": "砂田橋あきら",
+      "name_en": "Sunadabashi Akira",
       "type": "サポーター",
       "attribute": "heat",
       "color": "紫",
@@ -948,6 +1053,7 @@
     {
       "id": 105,
       "name": "下灘いよ",
+      "name_en": "Shimonada Iyo",
       "type": "ディフェンダー",
       "attribute": "cool",
       "color": "橙",
@@ -957,6 +1063,7 @@
     {
       "id": 106,
       "name": "北府ゆめの",
+      "name_en": "Kitago Yumeno",
       "type": "サポーター",
       "attribute": "heat",
       "color": "桃",
@@ -966,6 +1073,7 @@
     {
       "id": 107,
       "name": "駒ヶ林シキネ",
+      "name_en": "Komagabayashi Shikine",
       "type": "アタッカー",
       "attribute": "eco",
       "color": "緑",
@@ -975,6 +1083,7 @@
     {
       "id": 108,
       "name": "勝山ていら",
+      "name_en": "Katsuyama Teira",
       "type": "サポーター",
       "attribute": "cool",
       "color": "黄",
@@ -984,6 +1093,7 @@
     {
       "id": 109,
       "name": "小涌谷あすか",
+      "name_en": "Kowakidani Asuka",
       "type": "サポーター",
       "attribute": "heat",
       "color": "橙",
@@ -993,6 +1103,7 @@
     {
       "id": 110,
       "name": "茅沼みゆき",
+      "name_en": "Kayanuma Miyuki",
       "type": "サポーター",
       "attribute": "cool",
       "color": "赤",
@@ -1002,6 +1113,7 @@
     {
       "id": 111,
       "name": "糸魚川せつか",
+      "name_en": "Itoigawa Setsuka",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -1011,6 +1123,7 @@
     {
       "id": 112,
       "name": "二見浦みえ",
+      "name_en": "Futaminoura Mie",
       "type": "サポーター",
       "attribute": "eco",
       "color": "橙",
@@ -1020,6 +1133,7 @@
     {
       "id": 113,
       "name": "新田野なのか",
+      "name_en": "Nittano Nanoka",
       "type": "ディフェンダー",
       "attribute": "eco",
       "color": "黄",
@@ -1029,6 +1143,7 @@
     {
       "id": 114,
       "name": "樽見あゆ",
+      "name_en": "Tarumi Ayu",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1038,6 +1153,7 @@
     {
       "id": 115,
       "name": "調布みずか",
+      "name_en": "Chofu Mizuka",
       "type": "サポーター",
       "attribute": "heat",
       "color": "桃",
@@ -1047,6 +1163,7 @@
     {
       "id": 116,
       "name": "七尾こうめ",
+      "name_en": "Nanao Koume",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "赤",
@@ -1056,6 +1173,7 @@
     {
       "id": 117,
       "name": "白川あそ",
+      "name_en": "Shirakawa Aso",
       "type": "サポーター",
       "attribute": "heat",
       "color": "青",
@@ -1065,6 +1183,7 @@
     {
       "id": 118,
       "name": "徳島ると",
+      "name_en": "Tokushima Ruto",
       "type": "サポーター",
       "attribute": "cool",
       "color": "赤",
@@ -1074,6 +1193,7 @@
     {
       "id": 119,
       "name": "青森せいらん",
+      "name_en": "Aomori Seiran",
       "type": "アタッカー",
       "attribute": "cool",
       "color": "青",
@@ -1083,6 +1203,7 @@
     {
       "id": 120,
       "name": "新藤原ぼたん",
+      "name_en": "Shinfujiwara Botan",
       "type": "サポーター",
       "attribute": "eco",
       "color": "橙",
@@ -1092,6 +1213,7 @@
     {
       "id": 121,
       "name": "生駒わかな",
+      "name_en": "Ikoma Wakana",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "紫",
@@ -1101,6 +1223,7 @@
     {
       "id": 122,
       "name": "小浜まい",
+      "name_en": "Obama Mai",
       "type": "サポーター",
       "attribute": "eco",
       "color": "緑",
@@ -1110,6 +1233,7 @@
     {
       "id": 123,
       "name": "諫早ちどり",
+      "name_en": "Isahaya Chidori",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -1119,6 +1243,7 @@
     {
       "id": 124,
       "name": "横浜みちる",
+      "name_en": "Yokohama Michiru",
       "type": "ディフェンダー",
       "attribute": "cool",
       "color": "桃",
@@ -1128,6 +1253,7 @@
     {
       "id": 125,
       "name": "青海川しゅか",
+      "name_en": "Oumigawa Shuka",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1137,6 +1263,7 @@
     {
       "id": 126,
       "name": "白兎ももな",
+      "name_en": "Shirousagi Momona",
       "type": "サポーター",
       "attribute": "eco",
       "color": "桃",
@@ -1146,6 +1273,7 @@
     {
       "id": 127,
       "name": "千旦あずさ",
+      "name_en": "Senda Azusa",
       "type": "サポーター",
       "attribute": "eco",
       "color": "緑",
@@ -1155,6 +1283,7 @@
     {
       "id": 128,
       "name": "所沢にこ",
+      "name_en": "Tokorozawa Niko",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -1164,6 +1293,7 @@
     {
       "id": 129,
       "name": "五所川原べにか",
+      "name_en": "Goshogawara Benika",
       "type": "サポーター",
       "attribute": "heat",
       "color": "橙",
@@ -1173,6 +1303,7 @@
     {
       "id": 130,
       "name": "竹原せとら",
+      "name_en": "Takehara Setora",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1182,6 +1313,7 @@
     {
       "id": 131,
       "name": "勝田ミキ",
+      "name_en": "Katsuta Miki",
       "type": "サポーター",
       "attribute": "eco",
       "color": "桃",
@@ -1191,6 +1323,7 @@
     {
       "id": 132,
       "name": "東海なな",
+      "name_en": "Tokai Nana",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1200,6 +1333,7 @@
     {
       "id": 133,
       "name": "越美きらら",
+      "name_en": "Etsumi Kirara",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -1209,6 +1343,7 @@
     {
       "id": 134,
       "name": "福分おとは",
+      "name_en": "Fukuwake Otoha",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1218,6 +1353,7 @@
     {
       "id": 135,
       "name": "寿むつみ",
+      "name_en": "Kotobuki Mutsumi",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -1227,6 +1363,7 @@
     {
       "id": 136,
       "name": "但馬ひょうこ",
+      "name_en": "Tajima Hyouko",
       "type": "サポーター",
       "attribute": "heat",
       "color": "橙",
@@ -1236,6 +1373,7 @@
     {
       "id": 137,
       "name": "王子保こはな",
+      "name_en": "Oshio Kohana",
       "type": "サポーター",
       "attribute": "eco",
       "color": "桃",
@@ -1245,6 +1383,7 @@
     {
       "id": 138,
       "name": "宇都宮らいか",
+      "name_en": "Utsunomiya Raika",
       "type": "サポーター",
       "attribute": "heat",
       "color": "黄",
@@ -1254,6 +1393,7 @@
     {
       "id": 139,
       "name": "荒井まやか",
+      "name_en": "Arai Mayaka",
       "type": "ディフェンダー",
       "attribute": "cool",
       "color": "黄",
@@ -1263,6 +1403,7 @@
     {
       "id": 140,
       "name": "山口ゆづる",
+      "name_en": "Yamaguchi Yuzuru",
       "type": "サポーター",
       "attribute": "eco",
       "color": "黄",
@@ -1272,6 +1413,7 @@
     {
       "id": 141,
       "name": "大三東きっか",
+      "name_en": "Omisaki Kikka",
       "type": "ディフェンダー",
       "attribute": "heat",
       "color": "黄",
@@ -1281,6 +1423,7 @@
     {
       "id": 142,
       "name": "南小谷れんげ",
+      "name_en": "Minamiotari Renge",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "緑",
@@ -1290,6 +1433,7 @@
     {
       "id": 143,
       "name": "鶴舞さとみ",
+      "name_en": "Tsurumai Satomi",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "橙",
@@ -1299,6 +1443,7 @@
     {
       "id": 144,
       "name": "今井浜マオ",
+      "name_en": "Imaihama Mao",
       "type": "サポーター",
       "attribute": "cool",
       "color": "黄",
@@ -1308,6 +1453,7 @@
     {
       "id": 145,
       "name": "土佐久礼りょう",
+      "name_en": "Tosa-Kure Ryo",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "桃",
@@ -1317,6 +1463,7 @@
     {
       "id": 146,
       "name": "桑川ゆうり",
+      "name_en": "Kuwagawa Yuuri",
       "type": "ディフェンダー",
       "attribute": "heat",
       "color": "橙",
@@ -1326,6 +1473,7 @@
     {
       "id": 147,
       "name": "加太こなた",
+      "name_en": "Kada Konata",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "紫",
@@ -1335,6 +1483,7 @@
     {
       "id": 148,
       "name": "倉敷れお",
+      "name_en": "Kurashiki Reo",
       "type": "サポーター",
       "attribute": "heat",
       "color": "桃",
@@ -1344,6 +1493,7 @@
     {
       "id": 149,
       "name": "日暮里ハルカゼ",
+      "name_en": "Nippori Harukaze",
       "type": "アタッカー",
       "attribute": "cool",
       "color": "桃",
@@ -1353,6 +1503,7 @@
     {
       "id": 150,
       "name": "有田いまり",
+      "name_en": "Arita Imari",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "紫",
@@ -1362,6 +1513,7 @@
     {
       "id": 151,
       "name": "福神あおね",
+      "name_en": "Fukugami Aone",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1371,6 +1523,7 @@
     {
       "id": 152,
       "name": "鬼怒川にいな",
+      "name_en": "Kinugawa Niina",
       "type": "サポーター",
       "attribute": "heat",
       "color": "橙",
@@ -1380,6 +1533,7 @@
     {
       "id": 153,
       "name": "土合もくり",
+      "name_en": "Doai Mokuri",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "緑",
@@ -1389,6 +1543,7 @@
     {
       "id": 154,
       "name": "東田坂上ほなみ",
+      "name_en": "Azumadasakaue Honami",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1398,6 +1553,7 @@
     {
       "id": 155,
       "name": "豊野このは",
+      "name_en": "Toyono Konoha",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1407,6 +1563,7 @@
     {
       "id": 156,
       "name": "生山ほたる",
+      "name_en": "Shoyama Hotaru",
       "type": "ディフェンダー",
       "attribute": "heat",
       "color": "橙",
@@ -1416,6 +1573,7 @@
     {
       "id": 157,
       "name": "阿仁合にあ",
+      "name_en": "Aniai Nia",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -1425,6 +1583,7 @@
     {
       "id": 158,
       "name": "会津あやか",
+      "name_en": "Aizu Ayaka",
       "type": "ディフェンダー",
       "attribute": "cool",
       "color": "青",
@@ -1434,6 +1593,7 @@
     {
       "id": 159,
       "name": "富士山たかな",
+      "name_en": "Fujisan Takana",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "赤",
@@ -1443,6 +1603,7 @@
     {
       "id": 160,
       "name": "朝倉あさみ",
+      "name_en": "Asakura Asami",
       "type": "サポーター",
       "attribute": "eco",
       "color": "橙",
@@ -1452,6 +1613,7 @@
     {
       "id": 161,
       "name": "伊川谷さとり",
+      "name_en": "Ikawadani Satori",
       "type": "サポーター",
       "attribute": "eco",
       "color": "緑",
@@ -1461,6 +1623,7 @@
     {
       "id": 162,
       "name": "福住みぞれ",
+      "name_en": "Fukuzumi Mizore",
       "type": "サポーター",
       "attribute": "cool",
       "color": "桃",
@@ -1470,6 +1633,7 @@
     {
       "id": 163,
       "name": "豊橋ちわ",
+      "name_en": "Toyohashi Chiwa",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "橙",
@@ -1479,6 +1643,7 @@
     {
       "id": 164,
       "name": "八景島あいり",
+      "name_en": "Hakkeijima Airi",
       "type": "サポーター",
       "attribute": "cool",
       "color": "桃",
@@ -1488,6 +1653,7 @@
     {
       "id": 165,
       "name": "新津えつこ",
+      "name_en": "Niitsu Etsuko",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -1497,6 +1663,7 @@
     {
       "id": 166,
       "name": "立野みれい",
+      "name_en": "Tateno Mirei",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "赤",
@@ -1508,6 +1675,7 @@
     {
       "id": 1,
       "name": "エルミーヌ・ワロン",
+      "name_en": "Hermine Walloon",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "青",
@@ -1517,6 +1685,7 @@
     {
       "id": 2,
       "name": "赤壕まひる",
+      "name_en": "Sekigou Mahiru",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "赤",
@@ -1526,6 +1695,7 @@
     {
       "id": 3,
       "name": "波篠すすぐ",
+      "name_en": "Namishino Susugu",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -1535,6 +1705,7 @@
     {
       "id": 4,
       "name": "末永てすと",
+      "name_en": "Suenaga Tesuto",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "青",
@@ -1544,6 +1715,7 @@
     {
       "id": 5,
       "name": "果鳴ツヅキ",
+      "name_en": "Hatenaki Tsuzuki",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1553,6 +1725,7 @@
     {
       "id": 6,
       "name": "チェル・カーレ",
+      "name_en": "Chell Care",
       "type": "サポーター",
       "attribute": "eco",
       "color": "緑",
@@ -1562,6 +1735,7 @@
     {
       "id": 7,
       "name": "仰図まや",
+      "name_en": "Aogizu Maya",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -1571,6 +1745,7 @@
     {
       "id": 8,
       "name": "阿下喜ケイ",
+      "name_en": "Ageki Kei",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "青",
@@ -1580,6 +1755,7 @@
     {
       "id": 9,
       "name": "夕陽ケ丘マツカ",
+      "name_en": "Yuhigaoka Matsuka",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "緑",
@@ -1589,6 +1765,7 @@
     {
       "id": 10,
       "name": "夕陽ケ丘ウシオ",
+      "name_en": "Yuhigaoka Ushio",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -1598,6 +1775,7 @@
     {
       "id": 11,
       "name": "木屋はかり",
+      "name_en": "Kiya Hakari",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1607,6 +1785,7 @@
     {
       "id": 12,
       "name": "出戸たすく",
+      "name_en": "Deto Tasuku",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "赤",
@@ -1616,6 +1795,7 @@
     {
       "id": 13,
       "name": "花形ひかる",
+      "name_en": "Hanagata Hikaru",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "紫",
@@ -1625,6 +1805,7 @@
     {
       "id": 14,
       "name": "汐留いちご",
+      "name_en": "Shiodome Ichigo",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -1634,6 +1815,7 @@
     {
       "id": 15,
       "name": "安途ふたば",
+      "name_en": "Ato Futaba",
       "type": "アタッカー",
       "attribute": "eco",
       "color": "橙",
@@ -1643,6 +1825,7 @@
     {
       "id": 16,
       "name": "天台ヤコ",
+      "name_en": "Tendai Yako",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -1652,6 +1835,7 @@
     {
       "id": 17,
       "name": "黒部るい",
+      "name_en": "Kurobe Rui",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "桃",
@@ -1661,6 +1845,7 @@
     {
       "id": 18,
       "name": "石橋おくる",
+      "name_en": "Ishibashi Okuru",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1670,6 +1855,7 @@
     {
       "id": 19,
       "name": "千寿ヶ原ひとは",
+      "name_en": "Senjugahara Hitoha",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "黄",
@@ -1679,6 +1865,7 @@
     {
       "id": 20,
       "name": "エステル・サラ・パンクラス",
+      "name_en": "Estelle Sarah Pancras",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -1688,6 +1875,7 @@
     {
       "id": 21,
       "name": "アンナ・チェルトナム",
+      "name_en": "Anna Cheltenham",
       "type": "サポーター",
       "attribute": "cool",
       "color": "緑",
@@ -1697,6 +1885,7 @@
     {
       "id": 22,
       "name": "レイラ・スコッツマン",
+      "name_en": "Leila Scotsman",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "赤",
@@ -1706,6 +1895,7 @@
     {
       "id": 23,
       "name": "ベティー・ウィリアムス",
+      "name_en": "Betty Williams",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "橙",
@@ -1715,6 +1905,7 @@
     {
       "id": 24,
       "name": "アメリア・パウエル",
+      "name_en": "Amelia Powell",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "赤",
@@ -1724,6 +1915,7 @@
     {
       "id": 25,
       "name": "ルース・ブルックリン",
+      "name_en": "Ruth Brooklyn",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -1733,6 +1925,7 @@
     {
       "id": 26,
       "name": "ジン・ティエン",
+      "name_en": "Jin Tian",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "黄",
@@ -1742,6 +1935,7 @@
     {
       "id": 27,
       "name": "ツー・スイラン",
+      "name_en": "Zi Cuilan",
       "type": "サポーター",
       "attribute": "cool",
       "color": "桃",
@@ -1751,6 +1945,7 @@
     {
       "id": 28,
       "name": "ロン・リンファ",
+      "name_en": "Long Linfeng",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "青",
@@ -1760,6 +1955,7 @@
     {
       "id": 29,
       "name": "途来あるは",
+      "name_en": "Torai Aruha",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "緑",
@@ -1769,6 +1965,7 @@
     {
       "id": 30,
       "name": "ハリシャ・チャトラパティ",
+      "name_en": "Harisha Chhatrapati",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "紫",
@@ -1778,6 +1975,7 @@
     {
       "id": 31,
       "name": "アヌシュカ・ニューデリー",
+      "name_en": "Anushka New Delhi",
       "type": "ディフェンダー",
       "attribute": "cool",
       "color": "青",
@@ -1787,6 +1985,7 @@
     {
       "id": 32,
       "name": "シャンティ・ダージリン",
+      "name_en": "Shanti Darjeeling",
       "type": "サポーター",
       "attribute": "eco",
       "color": "赤",
@@ -1796,6 +1995,7 @@
     {
       "id": 33,
       "name": "オリヴィア・アデレード",
+      "name_en": "Olivia Adelaide",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "橙",
@@ -1805,6 +2005,7 @@
     {
       "id": 34,
       "name": "サニー・バイロン",
+      "name_en": "Sunny Byron",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "黄",
@@ -1814,6 +2015,7 @@
     {
       "id": 35,
       "name": "ミア・ジェムブルック",
+      "name_en": "Mia Gembrook",
       "type": "サポーター",
       "attribute": "eco",
       "color": "緑",
@@ -1823,6 +2025,7 @@
     {
       "id": 36,
       "name": "マーシャ・エカテリンブルク",
+      "name_en": "Masha Ekaterinburg",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -1832,6 +2035,7 @@
     {
       "id": 37,
       "name": "ニーカ・ヤロスラフスキー",
+      "name_en": "Nika Yaroslavsky",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1841,6 +2045,7 @@
     {
       "id": 38,
       "name": "ポーリャ・モスコフスキー",
+      "name_en": "Polya Moskovskiy",
       "type": "サポーター",
       "attribute": "eco",
       "color": "橙",
@@ -1850,6 +2055,7 @@
     {
       "id": 39,
       "name": "ショコラ・グリュイエール",
+      "name_en": "Chocolat Gruyères",
       "type": "アタッカー",
       "attribute": "eco",
       "color": "青",
@@ -1859,6 +2065,7 @@
     {
       "id": 40,
       "name": "レオニー・シュトース",
+      "name_en": "Leonie Stoos",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "緑",
@@ -1868,6 +2075,7 @@
     {
       "id": 41,
       "name": "レニャ・サンモリッツ",
+      "name_en": "Lenya St. Moritz",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "橙",
@@ -1877,6 +2085,7 @@
     {
       "id": 42,
       "name": "アミーラ・ラムセス",
+      "name_en": "Amira Ramses",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -1886,6 +2095,7 @@
     {
       "id": 43,
       "name": "ティエ・ヘルワーン",
+      "name_en": "Tie Helwan",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -1895,6 +2105,7 @@
     {
       "id": 44,
       "name": "ネネ・エル・ラムル",
+      "name_en": "Nene Al Ramlh",
       "type": "サポーター",
       "attribute": "eco",
       "color": "黄",
@@ -1904,6 +2115,7 @@
     {
       "id": 45,
       "name": "雲屋みゅう",
+      "name_en": "Kumoya Myu",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -1913,6 +2125,7 @@
     {
       "id": 46,
       "name": "五葉あこ",
+      "name_en": "Goyo Ako",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "緑",
@@ -1922,6 +2135,7 @@
     {
       "id": 47,
       "name": "クロエ・オペラ",
+      "name_en": "Chloe Opéra",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "紫",
@@ -1931,6 +2145,7 @@
     {
       "id": 48,
       "name": "エマ・ノアイユ",
+      "name_en": "Emma Noailles",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -1940,6 +2155,7 @@
     {
       "id": 49,
       "name": "レア・パリ・ノール",
+      "name_en": "Lea Paris Nord",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "橙",
@@ -1949,6 +2165,7 @@
     {
       "id": 50,
       "name": "ルイザ・ベロ・オリゾンテ",
+      "name_en": "Luiza Belo Horizonte",
       "type": "アタッカー",
       "attribute": "eco",
       "color": "緑",
@@ -1958,6 +2175,7 @@
     {
       "id": 51,
       "name": "エレナ・オリャンタイタンボ",
+      "name_en": "Elena Ollantaytambo",
       "type": "サポーター",
       "attribute": "cool",
       "color": "橙",
@@ -1967,6 +2185,7 @@
     {
       "id": 52,
       "name": "メリナ・レティーロ",
+      "name_en": "Melina Retiro",
       "type": "ディフェンダー",
       "attribute": "heat",
       "color": "赤",
@@ -1976,6 +2195,7 @@
     {
       "id": 53,
       "name": "オーロラ・アンカレッジ",
+      "name_en": "Aurora Anchorage",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1985,6 +2205,7 @@
     {
       "id": 54,
       "name": "ノーラ・ホワイトホース",
+      "name_en": "Nora Whitehorse",
       "type": "サポーター",
       "attribute": "eco",
       "color": "緑",
@@ -1994,6 +2215,7 @@
     {
       "id": 55,
       "name": "メープル・トロント",
+      "name_en": "Maple Toronto",
       "type": "サポーター",
       "attribute": "heat",
       "color": "橙",
@@ -2003,6 +2225,7 @@
     {
       "id": 56,
       "name": "ハノイ・シュアン",
+      "name_en": "Hanoi Xuan",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -2012,6 +2235,7 @@
     {
       "id": 57,
       "name": "ナム・ソユン",
+      "name_en": "Nam Seoyun",
       "type": "サポーター",
       "attribute": "eco",
       "color": "緑",
@@ -2021,6 +2245,7 @@
     {
       "id": 58,
       "name": "ピン・ユートン",
+      "name_en": "Ping Yutong",
       "type": "サポーター",
       "attribute": "heat",
       "color": "黄",
@@ -2030,6 +2255,7 @@
     {
       "id": 59,
       "name": "フルゥ・ユトレヒト",
+      "name_en": "Fleur Utrecht",
       "type": "サポーター",
       "attribute": "eco",
       "color": "黄",
@@ -2039,6 +2265,7 @@
     {
       "id": 60,
       "name": "ミラ・ビネンホフ",
+      "name_en": "Mila Binnenhof",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "赤",
@@ -2048,6 +2275,7 @@
     {
       "id": 61,
       "name": "ソフィア・ハーグ",
+      "name_en": "Sophie Haag",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -2057,6 +2285,7 @@
     {
       "id": 62,
       "name": "笛吹エイル",
+      "name_en": "Fuefuki Eiru",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -2066,6 +2295,7 @@
     {
       "id": 63,
       "name": "浜松みちほ",
+      "name_en": "Hamamatsu Michiho",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "黄",
@@ -2075,6 +2305,7 @@
     {
       "id": 64,
       "name": "リタ・マドリード",
+      "name_en": "Lita Madrid",
       "type": "サポーター",
       "attribute": "eco",
       "color": "青",
@@ -2084,6 +2315,7 @@
     {
       "id": 65,
       "name": "アスヤ・シシハネ",
+      "name_en": "Asya Şişhane",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -2093,6 +2325,7 @@
     {
       "id": 66,
       "name": "コーラ・ミリエス",
+      "name_en": "Cora Milies",
       "type": "サポーター",
       "attribute": "cool",
       "color": "橙",
@@ -2102,6 +2335,7 @@
     {
       "id": 67,
       "name": "エドウィナ・プレトリア",
+      "name_en": "Edwina Pretoria",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -2111,6 +2345,7 @@
     {
       "id": 68,
       "name": "アダリヤ・ビクトリア",
+      "name_en": "Adaliya Victoria",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "緑",
@@ -2120,6 +2355,7 @@
     {
       "id": 69,
       "name": "モナ・ハットフィールド",
+      "name_en": "Mona Hatfield",
       "type": "サポーター",
       "attribute": "heat",
       "color": "黄",
@@ -2129,6 +2365,7 @@
     {
       "id": 70,
       "name": "アメリー・ニーッテュクンプ",
+      "name_en": "Amelie Niittykumpu",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -2138,6 +2375,7 @@
     {
       "id": 71,
       "name": "ルミ・ロヴァニエミ",
+      "name_en": "Lumi Rovaniemi",
       "type": "ディフェンダー",
       "attribute": "eco",
       "color": "緑",
@@ -2147,6 +2385,7 @@
     {
       "id": 72,
       "name": "イーダ・ヘルシンキ",
+      "name_en": "Iida Helsinki",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "紫",
@@ -2156,6 +2395,7 @@
     {
       "id": 73,
       "name": "アチャラ・メークローン",
+      "name_en": "Achara Maeklong",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "橙",
@@ -2165,6 +2405,7 @@
     {
       "id": 74,
       "name": "スワイ・サイアム",
+      "name_en": "Suai Siam",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "青",
@@ -2174,6 +2415,7 @@
     {
       "id": 75,
       "name": "セーリー・チェンマイ",
+      "name_en": "Seerii Chiangmai",
       "type": "サポーター",
       "attribute": "cool",
       "color": "紫",
@@ -2183,6 +2425,7 @@
     {
       "id": 76,
       "name": "ドゥルセ・タクバヤ",
+      "name_en": "Dulce Tacubaya",
       "type": "サポーター",
       "attribute": "heat",
       "color": "橙",
@@ -2192,6 +2435,7 @@
     {
       "id": 77,
       "name": "マルガリータ・ソチミルコ",
+      "name_en": "Margarita Xochimilco",
       "type": "サポーター",
       "attribute": "eco",
       "color": "青",
@@ -2201,6 +2445,7 @@
     {
       "id": 78,
       "name": "フランシスカ・テキーラ",
+      "name_en": "Francisca Tequila",
       "type": "アタッカー",
       "attribute": "heat",
       "color": "赤",
@@ -2210,6 +2455,7 @@
     {
       "id": 79,
       "name": "泰あんず",
+      "name_en": "Tai Anzu",
       "type": "サポーター",
       "attribute": "cool",
       "color": "橙",
@@ -2219,6 +2465,7 @@
     {
       "id": 80,
       "name": "泰らいむ",
+      "name_en": "Tai Lime",
       "type": "サポーター",
       "attribute": "eco",
       "color": "緑",
@@ -2228,6 +2475,7 @@
     {
       "id": 81,
       "name": "ロッサ・ローマ",
+      "name_en": "Rossa Roma",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "赤",
@@ -2237,6 +2485,7 @@
     {
       "id": 82,
       "name": "ルジェント・ローマ",
+      "name_en": "Rgento Roma",
       "type": "ディフェンダー",
       "attribute": "heat",
       "color": "赤",
@@ -2246,6 +2495,7 @@
     {
       "id": 83,
       "name": "ビアンカ・ローマ",
+      "name_en": "Bianca Roma",
       "type": "ディフェンダー",
       "attribute": "heat",
       "color": "赤",
@@ -2255,6 +2505,7 @@
     {
       "id": 84,
       "name": "ネラ・クライストチャーチ",
+      "name_en": "Nela Christchurch",
       "type": "ディフェンダー",
       "attribute": "heat",
       "color": "赤",
@@ -2264,6 +2515,7 @@
     {
       "id": 85,
       "name": "エリ・ダニーデン",
+      "name_en": "Eri Dunedin",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -2273,6 +2525,7 @@
     {
       "id": 86,
       "name": "アビー・スプリングフィールド",
+      "name_en": "Abbie Springfield",
       "type": "サポーター",
       "attribute": "eco",
       "color": "黄",
@@ -2282,6 +2535,7 @@
     {
       "id": 87,
       "name": "アイナ・キロハナ",
+      "name_en": "Aina Kilohana",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "緑",
@@ -2291,6 +2545,7 @@
     {
       "id": 88,
       "name": "マヒナ・クアラカイ",
+      "name_en": "Mahina Kualakaʻi",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -2300,6 +2555,7 @@
     {
       "id": 89,
       "name": "リロ・コオリナ",
+      "name_en": "Lilo Ko Olina",
       "type": "サポーター",
       "attribute": "heat",
       "color": "黄",
@@ -2309,6 +2565,7 @@
     {
       "id": 90,
       "name": "キャシー・ナイアガラ",
+      "name_en": "Kathy Niagara",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "緑",
@@ -2318,6 +2575,7 @@
     {
       "id": 91,
       "name": "ルーシー・ユニオン",
+      "name_en": "Lucy Union",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "黄",
@@ -2327,6 +2585,7 @@
     {
       "id": 92,
       "name": "アリアナ・ジャスパー",
+      "name_en": "Ariana Jasper",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -2336,6 +2595,7 @@
     {
       "id": 93,
       "name": "ニクシー・ブレーマーフェルデ",
+      "name_en": "Nixie Bremervörde",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -2345,6 +2605,7 @@
     {
       "id": 94,
       "name": "クラウディア・ベルリン",
+      "name_en": "Claudia Berlin",
       "type": "サポーター",
       "attribute": "heat",
       "color": "黄",
@@ -2354,6 +2615,7 @@
     {
       "id": 95,
       "name": "クララ・ヴッパーフェルト",
+      "name_en": "Clara Wupperfeld",
       "type": "サポーター",
       "attribute": "eco",
       "color": "橙",
@@ -2363,6 +2625,7 @@
     {
       "id": 96,
       "name": "天星ツキ",
+      "name_en": "Amahoshi Tsuki",
       "type": "サポーター",
       "attribute": "eco",
       "color": "青",
@@ -2372,6 +2635,7 @@
     {
       "id": 97,
       "name": "殿ふじこ",
+      "name_en": "Tono Fujiko",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -2381,6 +2645,7 @@
     {
       "id": 98,
       "name": "コラライン・ビーチ",
+      "name_en": "Coraline Beach",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -2390,6 +2655,7 @@
     {
       "id": 99,
       "name": "クリスタル・センカン",
+      "name_en": "Crystal Sengkang",
       "type": "サポーター",
       "attribute": "eco",
       "color": "紫",
@@ -2399,6 +2665,7 @@
     {
       "id": 100,
       "name": "アリッサ・ブラッデル",
+      "name_en": "Arissa Braddell",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -2408,6 +2675,7 @@
     {
       "id": 101,
       "name": "ジャニス・ゴガーバーン",
+      "name_en": "Janis Gogarburn",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "橙",
@@ -2417,6 +2685,7 @@
     {
       "id": 102,
       "name": "ローリー・グレンフィナン",
+      "name_en": "Rolly Glenfinnan",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "赤",
@@ -2426,6 +2695,7 @@
     {
       "id": 103,
       "name": "アイラ・ヒューストン",
+      "name_en": "Aira Heuston",
       "type": "アタッカー",
       "attribute": "eco",
       "color": "黄",
@@ -2435,6 +2705,7 @@
     {
       "id": 104,
       "name": "ミラベル・モントルー",
+      "name_en": "Mirabelle Montreux",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "黄",
@@ -2444,6 +2715,7 @@
     {
       "id": 105,
       "name": "ポム・ベルビュー",
+      "name_en": "Pomme Bellevue",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "緑",
@@ -2453,6 +2725,7 @@
     {
       "id": 106,
       "name": "マロン・マルティニ",
+      "name_en": "Marron Martigny",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "橙",
@@ -2462,6 +2735,7 @@
     {
       "id": 107,
       "name": "ガブリエラ・アントワープ",
+      "name_en": "Gabriella Antwerp",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "黄",
@@ -2471,6 +2745,7 @@
     {
       "id": 108,
       "name": "ジュリエット・ブリュッセル",
+      "name_en": "Juliet Bruxelles",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "橙",
@@ -2480,6 +2755,7 @@
     {
       "id": 109,
       "name": "アンバー・デパンネ",
+      "name_en": "Amber De Panne",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -2489,6 +2765,7 @@
     {
       "id": 110,
       "name": "ヨンサン・ソウ",
+      "name_en": "Yongsan Seou",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -2498,6 +2775,7 @@
     {
       "id": 111,
       "name": "トンタン・チェリン",
+      "name_en": "Dongtan Chaerin",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "紫",
@@ -2507,6 +2785,7 @@
     {
       "id": 112,
       "name": "ソウル・マウム",
+      "name_en": "Seoul Maum",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "赤",
@@ -2516,6 +2795,7 @@
     {
       "id": 113,
       "name": "北乃ささら",
+      "name_en": "Kitano Sasara",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "橙",
@@ -2525,6 +2805,7 @@
     {
       "id": 114,
       "name": "南乃れいる",
+      "name_en": "Minamino Reiru",
       "type": "サポーター",
       "attribute": "heat",
       "color": "黄",
@@ -2534,6 +2815,7 @@
     {
       "id": 115,
       "name": "アーイダ・ブルジュマーン",
+      "name_en": "Aaida Burjuman",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -2543,6 +2825,7 @@
     {
       "id": 116,
       "name": "ギナー・ジュメイラ",
+      "name_en": "Ghinaa Jumeirah",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "橙",
@@ -2552,6 +2835,7 @@
     {
       "id": 117,
       "name": "ジュマーナ・アトランティス",
+      "name_en": "Jumaana Atlantis",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "青",
@@ -2561,6 +2845,7 @@
     {
       "id": 118,
       "name": "リーガ・イマンタ",
+      "name_en": "Liga Imanta",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -2570,6 +2855,7 @@
     {
       "id": 119,
       "name": "アニカ・タルトゥ",
+      "name_en": "Annika Tartu",
       "type": "サポーター",
       "attribute": "heat",
       "color": "橙",
@@ -2579,6 +2865,7 @@
     {
       "id": 120,
       "name": "マルティナ・ヴィリニュス",
+      "name_en": "Martina Vilnius",
       "type": "サポーター",
       "attribute": "eco",
       "color": "紫",
@@ -2588,6 +2875,7 @@
     {
       "id": 121,
       "name": "コニー・クラークデール",
+      "name_en": "Connie Clarkdale",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "黄",
@@ -2597,6 +2885,7 @@
     {
       "id": 122,
       "name": "マリリン・マクリーン",
+      "name_en": "Marilyn McLean",
       "type": "ディフェンダー",
       "attribute": "cool",
       "color": "紫",
@@ -2606,6 +2895,7 @@
     {
       "id": 123,
       "name": "サブリナ・サンタバーバラ",
+      "name_en": "Sabrina Santa Barbara",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -2615,6 +2905,7 @@
     {
       "id": 124,
       "name": "アベラ・ヴァンセンヌ",
+      "name_en": "Abella Vincennes",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "緑",
@@ -2624,6 +2915,7 @@
     {
       "id": 125,
       "name": "ベルナデット・ヴィルパント",
+      "name_en": "Bernadette Villepinte",
       "type": "サポーター",
       "attribute": "heat",
       "color": "紫",
@@ -2633,6 +2925,7 @@
     {
       "id": 126,
       "name": "ココ・ヴェルサイユ",
+      "name_en": "Coco Versailles",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -2642,6 +2935,7 @@
     {
       "id": 127,
       "name": "蕗つぐみ",
+      "name_en": "Fuki Tsugumi",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "青",
@@ -2651,6 +2945,7 @@
     {
       "id": 128,
       "name": "蕗つばめ",
+      "name_en": "Fuki Tsubame",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "青",
@@ -2660,6 +2955,7 @@
     {
       "id": 129,
       "name": "ナディア・ヴォヤジャー",
+      "name_en": "Nadia Voyager",
       "type": "サポーター",
       "attribute": "heat",
       "color": "赤",
@@ -2669,6 +2965,7 @@
     {
       "id": 130,
       "name": "カフラマーナ・ケニトラ",
+      "name_en": "Kahramana Kenitra",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -2678,6 +2975,7 @@
     {
       "id": 131,
       "name": "ジャミラ・ラバト",
+      "name_en": "Jamila Rabat",
       "type": "サポーター",
       "attribute": "eco",
       "color": "黄",

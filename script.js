@@ -14,6 +14,8 @@ class DenkoManager {
         // アプリケーションの状態管理
         this.denkoData = { original: [], extra: [] };
         this.userData = { original: {}, extra: {} };
+        // でんこ画像ファイル名用の英名キー（list.json の default）
+        this.imageKeys = { original: [], extra: [] };
         this.currentTab = 'original';
         this.sortDirection = 'asc';
         this.currentSortBy = 'id';
@@ -139,13 +141,66 @@ class DenkoManager {
      */
     async initializeData() {
         try {
-            await this.loadDenkoData();
+            await Promise.all([
+                this.loadDenkoData(),
+                this.loadImageKeys()
+            ]);
             this.loadUserData();
             this.renderDenkoList();
             this.updateStatistics();
         } catch (error) {
             console.error('データの初期化に失敗しました:', error);
             this.showError('データの読み込みに失敗しました。');
+        }
+    }
+
+    /**
+     * でんこ画像キー（list.json default）の読み込み
+     */
+    async loadImageKeys() {
+        try {
+            const response = await fetch('./ekihack/list.json');
+            if (!response.ok) {
+                throw new Error(`list.jsonの読み込みに失敗しました。HTTPステータス: ${response.status}`);
+            }
+
+            const data = await response.json();
+            const defaults = data && data.default ? data.default : {};
+            this.imageKeys = {
+                original: Array.isArray(defaults.original) ? defaults.original : [],
+                extra: Array.isArray(defaults.extra) ? defaults.extra : []
+            };
+            console.log(
+                `画像キーを読み込みました。オリジナル: ${this.imageKeys.original.length}件, エクストラ: ${this.imageKeys.extra.length}件`
+            );
+        } catch (error) {
+            console.error('画像キーの読み込みエラー:', error);
+            // 画像なしでもアプリは継続できるよう空配列で初期化
+            this.imageKeys = { original: [], extra: [] };
+        }
+    }
+
+    /**
+     * でんこ画像のURLを返す（無い場合は空文字）
+     */
+    getDenkoImageUrl(denko) {
+        try {
+            if (!denko || typeof denko.id !== 'number') {
+                return '';
+            }
+            const keys = this.imageKeys[this.currentTab] || [];
+            const index = this.currentTab === 'extra' ? denko.id - 1 : denko.id;
+            if (index < 0 || index >= keys.length) {
+                return '';
+            }
+            const key = keys[index];
+            if (!key || typeof key !== 'string') {
+                return '';
+            }
+            return `./ekihack/download/default/${encodeURIComponent(key)}_usual.png`;
+        } catch (error) {
+            console.error('画像URLの生成に失敗しました:', error);
+            return '';
         }
     }
 
@@ -308,10 +363,14 @@ class DenkoManager {
             
             const userData = this.getUserData(denko.id);
             
-            // 名前フィルタ
-            const nameFilter = this.elements.nameFilter.value.toLowerCase();
-            if (nameFilter && !denko.name.toLowerCase().includes(nameFilter)) {
-                return false;
+            // 名前フィルタ（日本語名・英字名の部分一致）
+            const nameFilter = this.elements.nameFilter.value.trim().toLowerCase();
+            if (nameFilter) {
+                const nameJa = (denko.name || '').toLowerCase();
+                const nameEn = (denko.name_en || '').toLowerCase();
+                if (!nameJa.includes(nameFilter) && !nameEn.includes(nameFilter)) {
+                    return false;
+                }
             }
             
             // タイプフィルタ
@@ -398,20 +457,41 @@ class DenkoManager {
     }
 
     /**
+     * HTML挿入用に特殊文字をエスケープする
+     */
+    escapeHtml(value) {
+        return String(value ?? '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    /**
      * でんこ要素の作成
      */
     createDenkoElement(denko) {
         const userData = this.getUserData(denko.id);
         const denkoDiv = document.createElement('div');
         denkoDiv.className = `denko-item ${userData.owned ? 'owned' : 'not-owned'}`;
+        const nameEnHtml = denko.name_en
+            ? `<span class="denko-name-en">${this.escapeHtml(denko.name_en)}</span>`
+            : '';
+        const imageUrl = this.getDenkoImageUrl(denko);
+        const portraitHtml = imageUrl
+            ? `<img class="denko-portrait" src="${imageUrl}" alt="${this.escapeHtml(denko.name)}" loading="lazy" width="72" height="72" onerror="this.remove()">`
+            : '';
         
         denkoDiv.innerHTML = `
             <div class="denko-header">
                 <div class="denko-basic-info">
                     <span class="denko-id">No.${denko.id}</span>
-                    <span class="denko-name">${denko.name}</span>
-                    <span class="denko-type">${denko.type}</span>
-                    <span class="denko-attribute ${denko.attribute}">${denko.attribute}</span>
+                    <span class="denko-names">
+                        <span class="denko-name">${this.escapeHtml(denko.name)}</span>
+                        ${nameEnHtml}
+                    </span>
+                    <span class="denko-type">${this.escapeHtml(denko.type)}</span>
+                    <span class="denko-attribute ${this.escapeHtml(denko.attribute)}">${this.escapeHtml(denko.attribute)}</span>
                 </div>
                 <div class="denko-controls">
                     <div class="ownership-control">
@@ -440,8 +520,11 @@ class DenkoManager {
             </div>
             <div class="denko-details">
                 <div class="skill-info">
-                    <div class="skill-name">${denko.skill_name}</div>
-                    <div class="skill-effect">${denko.skill_effect}</div>
+                    <div class="skill-header">
+                        <div class="skill-name">${this.escapeHtml(denko.skill_name)}</div>
+                        ${portraitHtml}
+                    </div>
+                    <div class="skill-effect">${this.escapeHtml(denko.skill_effect)}</div>
                 </div>
             </div>
         `;

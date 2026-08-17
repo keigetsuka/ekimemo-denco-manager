@@ -290,10 +290,24 @@ body {
     font-size: 0.9rem;
 }
 
+.denko-names {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
 .denko-name {
     font-size: 1.3rem;
     font-weight: bold;
     color: #333;
+}
+
+.denko-name-en {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #6c757d;
+    letter-spacing: 0.02em;
 }
 
 .denko-type {
@@ -406,11 +420,29 @@ body {
     margin-top: 10px;
 }
 
+.skill-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
 .skill-name {
     font-weight: bold;
     color: #667eea;
-    margin-bottom: 8px;
     font-size: 1rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.denko-portrait {
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #fff;
 }
 
 .skill-effect {

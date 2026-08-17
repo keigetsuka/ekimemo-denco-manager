@@ -277,12 +277,55 @@ def merge_denko_data(basic_info_list, skill_info_dict):
             if not denko.get('skill_effect'):
                 denko['skill_effect'] = f'※スキル情報が見つかりませんでした（検索名: {short_name}）'
         
-        # short_nameは出力JSONから除去
+        # short_nameは出力JSONから除去し、キー順を揃える
         output_denko = {k: v for k, v in denko.items() if k != 'short_name'}
         merged_list.append(output_denko)
     
     print(f"スキル情報マッチング: {matched_skills}/{len(basic_info_list)}件")
     return merged_list
+
+def preserve_name_en(denko_data, existing_json_path):
+    """
+    再抽出時に既存 JSON の name_en を id で引き継ぐ。
+    新規でんこは name_en 無しのまま残し、add_name_en.py で後付けする。
+    """
+    try:
+        if not os.path.isfile(existing_json_path):
+            return denko_data
+        with open(existing_json_path, 'r', encoding='utf-8') as file:
+            existing = json.load(file)
+    except (OSError, json.JSONDecodeError) as error:
+        print(f"既存 name_en の引き継ぎをスキップしました: {error}")
+        return denko_data
+
+    try:
+        for group in ('original', 'extra'):
+            old_map = {
+                item.get('id'): item.get('name_en')
+                for item in existing.get(group, [])
+                if isinstance(item, dict)
+            }
+            for denko in denko_data.get(group, []):
+                name_en = old_map.get(denko.get('id'))
+                if name_en:
+                    denko['name_en'] = name_en
+        return denko_data
+    except Exception as error:
+        print(f"name_en のマージ中にエラー: {error}")
+        return denko_data
+
+
+def _ordered_denko(denko):
+    """出力キー順を id, name, name_en, ... に揃える"""
+    ordered = {}
+    for key in ('id', 'name', 'name_en', 'type', 'attribute', 'color', 'skill_name', 'skill_effect'):
+        if key in denko:
+            ordered[key] = denko[key]
+    for key, value in denko.items():
+        if key not in ordered:
+            ordered[key] = value
+    return ordered
+
 
 def main():
     """
@@ -318,13 +361,18 @@ def main():
         extra_merged = merge_denko_data(extra_basic, extra_skills)
         
         # JSONデータを作成
-        denko_data = {
-            'original': original_merged,
-            'extra': extra_merged
-        }
+        output_file = os.path.join(base_dir, 'denko_data.json')
+        denko_data = preserve_name_en(
+            {
+                'original': original_merged,
+                'extra': extra_merged
+            },
+            output_file
+        )
+        denko_data['original'] = [_ordered_denko(d) for d in denko_data['original']]
+        denko_data['extra'] = [_ordered_denko(d) for d in denko_data['extra']]
         
         # JSONファイルに保存
-        output_file = os.path.join(base_dir, 'denko_data.json')
         with open(output_file, 'w', encoding='utf-8') as file:
             json.dump(denko_data, file, ensure_ascii=False, indent=2)
         
