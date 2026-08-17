@@ -1,6 +1,6 @@
 # 駅メモ！でんこ管理アプリ
 
-「駅メモ！」の所持でんこを管理するWebアプリケーションです。HTML、CSS、JavaScriptのみで構成された静的アプリケーションで、ローカル環境で動作します。
+「駅メモ！」の所持でんこを管理するWebアプリケーションです。HTML、CSS、JavaScriptのみで構成された静的アプリケーションで、[GitHub Pages](https://keigetsuka.github.io/ekimemo-denco-manager/) またはローカル環境で動作します。
 
 ## 機能概要
 
@@ -61,11 +61,18 @@ ekimemo-denco-manager/
 
 ## 使用方法
 
+### オンライン版（GitHub Pages）
+
+ブラウザから次の URL で利用できます。
+
+- でんこ管理: https://keigetsuka.github.io/ekimemo-denco-manager/
+- ねこぱんち計算機: https://keigetsuka.github.io/ekimemo-denco-manager/nekopanchi.html
+
 ### ⚠️ 重要: HTTPサーバー経由でのアクセスが必要です
 
-このアプリケーションは JSON ファイルを動的に読み込むため、**必ずHTTPサーバー経由でアクセスしてください**。
+このアプリケーションは JSON ファイルを動的に読み込むため、**必ずHTTPサーバー経由でアクセスしてください**（上記の GitHub Pages も HTTP 配信です）。
 
-### 1. 推奨: HTTPサーバーでの起動
+### 1. ローカル: HTTPサーバーでの起動
 ```bash
 cd /home/sleach/ekimemo-denco-manager
 python3 -m http.server 8080
@@ -112,7 +119,7 @@ python -m http.server 8080
 - **データをインポート**: 以前エクスポートしたJSONファイルを読み込み
 
 ### 8. ねこぱんち計算機の使用
-1. **アクセス**: `http://localhost:8080/nekopanchi.html`、またはトップページの「ねこぱんち計算機」リンクから遷移
+1. **アクセス**: [オンライン版](https://keigetsuka.github.io/ekimemo-denco-manager/nekopanchi.html)、ローカルの `http://localhost:8080/nekopanchi.html`、またはトップページの「ねこぱんち計算機」リンクから遷移
 2. **レベル入力**: でんこの現在レベル（1～100）を入力
 3. **経験値入力**: 現在レベル内の経験値を入力（次レベル必要値未満）
 4. **ねこぱんち選択**: 使用するねこぱんちの種類を選択
