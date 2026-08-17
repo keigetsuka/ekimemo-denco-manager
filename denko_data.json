@@ -1484,6 +1484,24 @@
       "color": "桃",
       "skill_name": "ラブラブゲージ",
       "skill_effect": "※スキル情報が見つかりませんでした（検索名: あいり）"
+    },
+    {
+      "id": 165,
+      "name": "新津えつこ",
+      "type": "サポーター",
+      "attribute": "heat",
+      "color": "赤",
+      "skill_name": "物とみんなの思い出",
+      "skill_effect": "※スキル情報が見つかりませんでした（検索名: えつこ）"
+    },
+    {
+      "id": 166,
+      "name": "立野みれい",
+      "type": "アタッカー",
+      "attribute": "heat",
+      "color": "赤",
+      "skill_name": "いい子にご褒美スタンプ",
+      "skill_effect": "※スキル情報が見つかりませんでした（検索名: みれい）"
     }
   ],
   "extra": [
@@ -2629,6 +2647,42 @@
       "color": "青",
       "skill_name": "ものぐさお姉ちゃん",
       "skill_effect": "※スキル情報が見つかりませんでした（検索名: つぐみ）"
+    },
+    {
+      "id": 128,
+      "name": "蕗つばめ",
+      "type": "トリックスター",
+      "attribute": "cool",
+      "color": "青",
+      "skill_name": "パワフル妹",
+      "skill_effect": "※スキル情報が見つかりませんでした（検索名: つばめ）"
+    },
+    {
+      "id": 129,
+      "name": "ナディア・ヴォヤジャー",
+      "type": "サポーター",
+      "attribute": "heat",
+      "color": "赤",
+      "skill_name": "ロマンチックが止まらない♡",
+      "skill_effect": "※スキル情報が見つかりませんでした（検索名: ナディア）"
+    },
+    {
+      "id": 130,
+      "name": "カフラマーナ・ケニトラ",
+      "type": "サポーター",
+      "attribute": "cool",
+      "color": "青",
+      "skill_name": "もぐもぐ食いしん坊",
+      "skill_effect": "※スキル情報が見つかりませんでした（検索名: カフラマーナ）"
+    },
+    {
+      "id": 131,
+      "name": "ジャミラ・ラバト",
+      "type": "サポーター",
+      "attribute": "eco",
+      "color": "黄",
+      "skill_name": "保湿命のナチュラルケア",
+      "skill_effect": "※スキル情報が見つかりませんでした（検索名: ジャミラ）"
     }
   ]
 }

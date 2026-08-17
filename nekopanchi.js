@@ -28,7 +28,7 @@ class NekopanchiCalculator {
     constructor() {
         /** @type {number[]} レベル別必要経験値（index 0 = Lv1） */
         this.expTable = [];
-        this.maxLevel = 80;
+        this.maxLevel = 100;
         this.elements = {};
         this.init();
     }

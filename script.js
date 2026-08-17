@@ -7,6 +7,9 @@
  */
 
 class DenkoManager {
+    /** でんこの最大レベル */
+    static MAX_LEVEL = 100;
+
     constructor() {
         // アプリケーションの状態管理
         this.denkoData = { original: [], extra: [] };
@@ -334,7 +337,7 @@ class DenkoManager {
             
             // レベル範囲フィルタ
             const levelMin = parseInt(this.elements.levelMin.value) || 1;
-            const levelMax = parseInt(this.elements.levelMax.value) || 80;
+            const levelMax = parseInt(this.elements.levelMax.value) || DenkoManager.MAX_LEVEL;
             const currentLevel = userData.level || 1;
             
             if (userData.owned && (currentLevel < levelMin || currentLevel > levelMax)) {
@@ -420,7 +423,7 @@ class DenkoManager {
                     <div class="level-control">
                         <label>Lv:</label>
                         <input type="number" class="level-input" 
-                               min="1" max="80" 
+                               min="1" max="${DenkoManager.MAX_LEVEL}" 
                                value="${userData.level || 1}"
                                ${!userData.owned ? 'disabled' : ''}
                                data-denko-id="${denko.id}">
@@ -495,7 +498,7 @@ class DenkoManager {
         if (!this.userData[this.currentTab][denkoId]) {
             this.userData[this.currentTab][denkoId] = { owned: false, level: 1, class: 1 };
         }
-        this.userData[this.currentTab][denkoId].level = Math.max(1, Math.min(80, level));
+        this.userData[this.currentTab][denkoId].level = Math.max(1, Math.min(DenkoManager.MAX_LEVEL, level));
         this.saveUserData();
     }
 
@@ -685,8 +688,9 @@ class DenkoManager {
         // キャンバスをクリア
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         
-        // レベル分布データを作成（1-80レベル）
-        const levelCounts = new Array(80).fill(0);
+        // レベル分布データを作成（1〜最大レベル）
+        const maxLevel = DenkoManager.MAX_LEVEL;
+        const levelCounts = new Array(maxLevel).fill(0);
         let totalOwned = 0;
         let totalLevel = 0;
         let ownedCount = 0;
@@ -739,9 +743,10 @@ class DenkoManager {
         ctx.strokeStyle = '#e9ecef';
         ctx.lineWidth = 1;
         
-        // 縦のグリッド線（レベル）
-        for (let i = 0; i <= 8; i++) {
-            const x = padding + (chartWidth / 8) * i;
+        // 縦のグリッド線（レベル・10レベル刻み）
+        const levelAxisSteps = maxLevel / 10;
+        for (let i = 0; i <= levelAxisSteps; i++) {
+            const x = padding + (chartWidth / levelAxisSteps) * i;
             ctx.beginPath();
             ctx.moveTo(x, padding);
             ctx.lineTo(x, padding + chartHeight);
@@ -774,7 +779,7 @@ class DenkoManager {
         ctx.stroke();
         
         // バーを描画
-        const barWidth = chartWidth / 80;
+        const barWidth = chartWidth / maxLevel;
         ctx.fillStyle = '#667eea';
         
         levelCounts.forEach((count, index) => {
@@ -793,9 +798,9 @@ class DenkoManager {
         ctx.textAlign = 'center';
         
         // X軸ラベル（レベル）
-        for (let i = 0; i <= 8; i++) {
+        for (let i = 0; i <= levelAxisSteps; i++) {
             const level = i * 10;
-            const x = padding + (chartWidth / 8) * i;
+            const x = padding + (chartWidth / levelAxisSteps) * i;
             ctx.fillText(level.toString(), x, padding + chartHeight + 20);
         }
         
