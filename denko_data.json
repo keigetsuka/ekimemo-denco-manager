@@ -73,7 +73,7 @@
     {
       "id": 7,
       "name": "大月シーナ",
-      "name_en": "Otsuki Shina",
+      "name_en": "Otsuki Sheena",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "青",
@@ -113,7 +113,7 @@
     {
       "id": 11,
       "name": "粟生津しいら",
-      "name_en": "Aozu Shiira",
+      "name_en": "Aozu Siira",
       "type": "ディフェンダー",
       "attribute": "eco",
       "color": "青",
@@ -173,7 +173,7 @@
     {
       "id": 17,
       "name": "ダッチュー",
-      "name_en": "Dacchu",
+      "name_en": "Dachu",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "桃",
@@ -213,7 +213,7 @@
     {
       "id": 21,
       "name": "王子しぐれ",
-      "name_en": "Oji Shigure",
+      "name_en": "Oji Sigure",
       "type": "サポーター",
       "attribute": "cool",
       "color": "紫",
@@ -393,7 +393,7 @@
     {
       "id": 39,
       "name": "尺土るる",
-      "name_en": "Shakudo Ruru",
+      "name_en": "Shakudo Lulu",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "黄",
@@ -533,7 +533,7 @@
     {
       "id": 53,
       "name": "白浜マリン",
-      "name_en": "Shirahama Marin",
+      "name_en": "Shirahama Malin",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "黄",
@@ -813,7 +813,7 @@
     {
       "id": 81,
       "name": "郡元ゆう",
-      "name_en": "Korimoto Yu",
+      "name_en": "Korimoto You",
       "type": "トリックスター",
       "attribute": "heat",
       "color": "緑",
@@ -893,7 +893,7 @@
     {
       "id": 89,
       "name": "総天ギンカ",
-      "name_en": "Stain Ginka",
+      "name_en": "Suten Ginka",
       "type": "ディフェンダー",
       "attribute": "eco",
       "color": "赤",
@@ -1453,7 +1453,7 @@
     {
       "id": 145,
       "name": "土佐久礼りょう",
-      "name_en": "Tosa-Kure Ryo",
+      "name_en": "Tosakure Ryo",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "桃",
@@ -1715,7 +1715,7 @@
     {
       "id": 5,
       "name": "果鳴ツヅキ",
-      "name_en": "Hatenaki Tsuzuki",
+      "name_en": "Hatenaki Tsuduki",
       "type": "サポーター",
       "attribute": "cool",
       "color": "青",
@@ -1935,7 +1935,7 @@
     {
       "id": 27,
       "name": "ツー・スイラン",
-      "name_en": "Zi Cuilan",
+      "name_en": "Zi Suiran",
       "type": "サポーター",
       "attribute": "cool",
       "color": "桃",
@@ -1945,7 +1945,7 @@
     {
       "id": 28,
       "name": "ロン・リンファ",
-      "name_en": "Long Linfeng",
+      "name_en": "Long Linhua",
       "type": "トリックスター",
       "attribute": "eco",
       "color": "青",
@@ -2125,7 +2125,7 @@
     {
       "id": 46,
       "name": "五葉あこ",
-      "name_en": "Goyo Ako",
+      "name_en": "Goyo Aco",
       "type": "トリックスター",
       "attribute": "cool",
       "color": "緑",
@@ -2245,7 +2245,7 @@
     {
       "id": 58,
       "name": "ピン・ユートン",
-      "name_en": "Ping Yutong",
+      "name_en": "Ping Yu-tung",
       "type": "サポーター",
       "attribute": "heat",
       "color": "黄",
