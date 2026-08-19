@@ -420,20 +420,11 @@ body {
     margin-top: 10px;
 }
 
-.skill-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-bottom: 8px;
-}
-
 .skill-name {
     font-weight: bold;
     color: #667eea;
+    margin-bottom: 8px;
     font-size: 1rem;
-    flex: 1;
-    min-width: 0;
 }
 
 .denko-portrait {

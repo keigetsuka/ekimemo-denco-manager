@@ -228,6 +228,7 @@ python -m http.server 8080
 ```bash
 cd /home/sleach/ekimemo-denco-manager
 python3 extract_denko_data_v3.py
+python3 fill_missing_skill_effects.py
 # 英字表記を再付与する場合
 python3 add_name_en.py
 ```

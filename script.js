@@ -486,6 +486,7 @@ class DenkoManager {
             <div class="denko-header">
                 <div class="denko-basic-info">
                     <span class="denko-id">No.${denko.id}</span>
+                    ${portraitHtml}
                     <span class="denko-names">
                         <span class="denko-name">${this.escapeHtml(denko.name)}</span>
                         ${nameEnHtml}
@@ -520,10 +521,7 @@ class DenkoManager {
             </div>
             <div class="denko-details">
                 <div class="skill-info">
-                    <div class="skill-header">
-                        <div class="skill-name">${this.escapeHtml(denko.skill_name)}</div>
-                        ${portraitHtml}
-                    </div>
+                    <div class="skill-name">${this.escapeHtml(denko.skill_name)}</div>
                     <div class="skill-effect">${this.escapeHtml(denko.skill_effect)}</div>
                 </div>
             </div>
