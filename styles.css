@@ -28,6 +28,7 @@
     --cool: #2f6f9a;
     --eco: #4a7d52;
     --font-display: "Dela Gothic One", "Hiragino Mincho ProN", serif;
+    --font-name: "M PLUS 1", "Hiragino Kaku Gothic ProN", sans-serif;
     --font-body: "Kosugi Maru", "Hiragino Kaku Gothic ProN", sans-serif;
     --font-mono: "Share Tech Mono", ui-monospace, monospace;
     --shadow-ticket: 6px 8px 0 #080b0e, 0 18px 36px rgba(0, 0, 0, 0.42);
@@ -618,12 +619,12 @@ a:hover {
 }
 
 .denko-name {
-    font-family: var(--font-display);
-    font-size: 1.28rem;
-    font-weight: 400;
+    font-family: var(--font-name);
+    font-size: 1.6rem;
+    font-weight: 700;
     color: var(--ticket-ink);
     letter-spacing: 0.04em;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 .denko-name-en {
@@ -725,12 +726,13 @@ a:hover {
 }
 
 .skill-name {
-    font-weight: 400;
-    font-family: var(--font-display);
+    font-weight: 700;
+    font-family: var(--font-name);
     color: #8a4d1f;
     margin-bottom: 6px;
-    font-size: 0.98rem;
+    font-size: 1.08rem;
     letter-spacing: 0.03em;
+    line-height: 1.5;
 }
 
 .denko-portrait {
