@@ -253,7 +253,7 @@ a:hover {
     display: inline-block;
 }
 
-/* ホーム放送（注意書き） */
+/* 注意書き */
 .notice {
     grid-column: 1 / -1;
     display: flex;
@@ -267,7 +267,7 @@ a:hover {
 }
 
 .notice::before {
-    content: "放送";
+    content: "注意";
     flex-shrink: 0;
     font-family: var(--font-mono);
     letter-spacing: 0.12em;
@@ -495,12 +495,112 @@ a:hover {
     color: var(--ticket-ink);
     box-shadow: var(--shadow-ticket);
     position: relative;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+}
+
+/* 所持: 鮮明な乗車券＋緑の縁取り */
+.denko-item.owned {
+    background: #f5eedc;
+    box-shadow:
+        inset 4px 0 0 var(--signal-green),
+        var(--shadow-ticket);
+}
+
+.denko-item.owned .ticket-stub {
+    background: #1b1712;
+    color: var(--amber);
+}
+
+.denko-item.owned .denko-id {
+    color: var(--amber);
+}
+
+/* 未所持: 彩度を落として「まだ持っていない」印象を強調 */
+.denko-item.not-owned {
+    background: #c8c4bb;
+    color: #4a4740;
+    opacity: 0.78;
+    box-shadow:
+        inset 4px 0 0 #7a756c,
+        4px 5px 0 #080b0e,
+        0 12px 24px rgba(0, 0, 0, 0.28);
+    filter: saturate(0.45);
+}
+
+.denko-item.not-owned:hover {
+    opacity: 0.9;
+    filter: saturate(0.55);
+}
+
+.denko-item.not-owned .ticket-stub {
+    background: #3a3a38;
+    color: #a8a49a;
+    border-right-color: #9a958c;
+}
+
+.denko-item.not-owned .denko-id {
+    color: #a8a49a;
+}
+
+.denko-item.not-owned .ticket-stub::after {
+    background: radial-gradient(circle at 7px 10px, #1a1a18 5px, transparent 5.5px) 0 0 / 14px 18px;
+}
+
+.denko-item.not-owned .denko-name {
+    color: #3f3c36;
+}
+
+.denko-item.not-owned .denko-name-en {
+    color: #6a6660;
+}
+
+.denko-item.not-owned .denko-portrait {
+    filter: grayscale(0.9);
+    opacity: 0.55;
+    background: #ebe8e0;
+    border-color: #a8a49a;
+    box-shadow: none;
+}
+
+.denko-item.not-owned .skill-name {
+    color: #5c564c;
+}
+
+.denko-item.not-owned .skill-effect {
+    color: #6a655c;
+}
+
+.denko-item.not-owned .skill-info {
+    background: rgba(27, 23, 18, 0.08);
+}
+
+.denko-item.not-owned .ownership-control label {
+    color: #5c564c;
+    font-weight: 700;
+}
+
+.denko-item.owned .ownership-control label {
+    color: var(--signal-green);
+    font-weight: 700;
 }
 
 .denko-item:hover {
     transform: translateY(-4px) rotate(-0.25deg);
     box-shadow: 8px 12px 0 #080b0e, 0 22px 40px rgba(0, 0, 0, 0.45);
+}
+
+.denko-item.owned:hover {
+    box-shadow:
+        inset 4px 0 0 var(--signal-green),
+        8px 12px 0 #080b0e,
+        0 22px 40px rgba(0, 0, 0, 0.45);
+}
+
+.denko-item.not-owned:hover {
+    box-shadow:
+        inset 4px 0 0 #7a756c,
+        6px 8px 0 #080b0e,
+        0 16px 28px rgba(0, 0, 0, 0.35);
 }
 
 .denko-list .denko-item:nth-child(-n+12) {
@@ -582,15 +682,16 @@ a:hover {
     pointer-events: none;
     opacity: 0.42;
     border: 2px solid currentColor;
+    z-index: 3;
 }
 
 .denko-item.owned .ticket-body::after {
-    content: "乗車済";
+    content: "所持";
     color: var(--signal-green);
 }
 
 .denko-item.not-owned .ticket-body::after {
-    content: "未乗車";
+    content: "未所持";
     color: var(--signal-red);
 }
 
