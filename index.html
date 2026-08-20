@@ -5,20 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>駅メモ！でんこ管理アプリ</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kosugi+Maru&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="atmosphere" aria-hidden="true">
+        <div class="atmosphere-tracks"></div>
+        <div class="atmosphere-grain"></div>
+    </div>
+    <div class="platform-stripe" aria-hidden="true"></div>
     <div class="container">
-        <!-- ヘッダー -->
+        <!-- ヘッダー（発車標） -->
         <header class="header">
-            <h1>駅メモ！でんこ管理アプリ</h1>
-            <p>でんこの所持状況とレベル情報を管理</p>
-            <nav class="page-nav" style="margin-top: 15px;">
-                <a href="nekopanchi.html" class="btn btn-info">ねこぱんち計算機</a>
-            </nav>
-            <div class="notice" style="background: #e3f2fd; padding: 10px; border-radius: 5px; margin-top: 10px; font-size: 0.9rem; color: #1565c0;">
-                <strong>📌 重要:</strong> このアプリケーションはHTTPサーバー経由でアクセスしてください。
-                <br><small>ファイルを直接開くとdenko_data.jsonが読み込めません。</small>
+            <div class="header-board">
+                <div class="header-identity">
+                    <span class="route-badge" aria-hidden="true">駅</span>
+                    <div>
+                        <p class="header-kicker">Platform 01 · Departure Board</p>
+                        <h1>駅メモ！でんこ管理</h1>
+                    </div>
+                </div>
+                <p class="header-lead">所持状況とレベルを、乗車券のように並べて管理する</p>
+                <nav class="page-nav">
+                    <a href="nekopanchi.html" class="btn btn-info">ねこぱんち計算機</a>
+                </nav>
+            </div>
+            <span class="board-live"><i></i> NOW BOARDING</span>
+            <div class="notice">
+                <div>
+                    <strong>重要:</strong> このアプリケーションはHTTPサーバー経由でアクセスしてください。
+                    <br><small>ファイルを直接開くと denko_data.json が読み込めません。</small>
+                </div>
             </div>
         </header>
 
@@ -33,7 +52,7 @@
             <!-- フィルタ・ソート -->
             <div class="filter-sort-container">
                 <div class="filter-section">
-                    <h3>フィルタ</h3>
+                    <h3>Filter</h3>
                     <div class="filter-row">
                         <div class="filter-item">
                             <label for="name-filter">名前:</label>
@@ -88,7 +107,7 @@
                 </div>
 
                 <div class="sort-section">
-                    <h3>ソート</h3>
+                    <h3>Sort</h3>
                     <div class="sort-controls">
                         <label for="sort-by">並び順:</label>
                         <select id="sort-by">
@@ -105,23 +124,23 @@
             <!-- 統計情報 -->
             <div class="stats-section">
                 <div class="stat-item">
-                    <span class="stat-label">総数:</span>
+                    <span class="stat-label">総数</span>
                     <span id="total-count">0</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-label">所持:</span>
+                    <span class="stat-label">所持</span>
                     <span id="owned-count">0</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-label">未所持:</span>
+                    <span class="stat-label">未所持</span>
                     <span id="not-owned-count">0</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-label">平均レベル:</span>
+                    <span class="stat-label">平均レベル</span>
                     <span id="average-level">0</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-label">平均クラス:</span>
+                    <span class="stat-label">平均クラス</span>
                     <span id="average-class">0</span>
                 </div>
             </div>
@@ -168,15 +187,15 @@
                 <canvas id="level-chart" width="800" height="400"></canvas>
                 <div class="graph-stats">
                     <div class="stat-row">
-                        <span class="stat-label">対象でんこ数:</span>
+                        <span class="stat-label">対象でんこ数</span>
                         <span id="graph-total-count">0</span>
                     </div>
                     <div class="stat-row">
-                        <span class="stat-label">所持でんこ数:</span>
+                        <span class="stat-label">所持でんこ数</span>
                         <span id="graph-owned-count">0</span>
                     </div>
                     <div class="stat-row">
-                        <span class="stat-label">平均レベル:</span>
+                        <span class="stat-label">平均レベル</span>
                         <span id="graph-average-level">0</span>
                     </div>
                 </div>

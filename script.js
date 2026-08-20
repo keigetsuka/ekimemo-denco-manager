@@ -244,19 +244,11 @@ class DenkoManager {
             const denkoList = document.getElementById('denko-list');
             if (denkoList) {
                 denkoList.innerHTML = `
-                    <div class="error-message" style="
-                        text-align: center; 
-                        padding: 40px; 
-                        background: #fff3cd; 
-                        border: 1px solid #ffeaa7; 
-                        border-radius: 10px; 
-                        color: #856404;
-                        margin: 20px 0;
-                    ">
-                        <h3>⚠️ データ読み込みエラー</h3>
+                    <div class="error-message">
+                        <h3>データ読み込みエラー</h3>
                         <p>denko_data.jsonファイルの読み込みに失敗しました。</p>
                         <p>以下を確認してください：</p>
-                        <ul style="text-align: left; display: inline-block;">
+                        <ul>
                             <li>denko_data.jsonファイルが存在するか</li>
                             <li>ファイルの形式が正しいか</li>
                             <li>HTTPサーバー経由でアクセスしているか</li>
@@ -483,46 +475,50 @@ class DenkoManager {
             : '';
         
         denkoDiv.innerHTML = `
-            <div class="denko-header">
-                <div class="denko-basic-info">
-                    <span class="denko-id">No.${denko.id}</span>
-                    ${portraitHtml}
-                    <span class="denko-names">
-                        <span class="denko-name">${this.escapeHtml(denko.name)}</span>
-                        ${nameEnHtml}
-                    </span>
-                    <span class="denko-type">${this.escapeHtml(denko.type)}</span>
-                    <span class="denko-attribute ${this.escapeHtml(denko.attribute)}">${this.escapeHtml(denko.attribute)}</span>
-                </div>
-                <div class="denko-controls">
-                    <div class="ownership-control">
-                        <input type="checkbox" class="ownership-checkbox" 
-                               ${userData.owned ? 'checked' : ''} 
-                               data-denko-id="${denko.id}">
-                        <label>所持</label>
-                    </div>
-                    <div class="level-control">
-                        <label>Lv:</label>
-                        <input type="number" class="level-input" 
-                               min="1" max="${DenkoManager.MAX_LEVEL}" 
-                               value="${userData.level || 1}"
-                               ${!userData.owned ? 'disabled' : ''}
-                               data-denko-id="${denko.id}">
-                    </div>
-                    <div class="class-control">
-                        <label>Class:</label>
-                        <input type="number" class="class-input" 
-                               min="1" max="12" 
-                               value="${userData.class || 1}"
-                               ${!userData.owned ? 'disabled' : ''}
-                               data-denko-id="${denko.id}">
-                    </div>
-                </div>
+            <div class="ticket-stub">
+                <span class="denko-id">No.${denko.id}</span>
             </div>
-            <div class="denko-details">
-                <div class="skill-info">
-                    <div class="skill-name">${this.escapeHtml(denko.skill_name)}</div>
-                    <div class="skill-effect">${this.escapeHtml(denko.skill_effect)}</div>
+            <div class="ticket-body">
+                <div class="denko-header">
+                    <div class="denko-basic-info">
+                        ${portraitHtml}
+                        <span class="denko-names">
+                            <span class="denko-name">${this.escapeHtml(denko.name)}</span>
+                            ${nameEnHtml}
+                        </span>
+                        <span class="denko-type" data-type="${this.escapeHtml(denko.type)}">${this.escapeHtml(denko.type)}</span>
+                        <span class="denko-attribute ${this.escapeHtml(denko.attribute)}">${this.escapeHtml(denko.attribute)}</span>
+                    </div>
+                    <div class="denko-controls">
+                        <div class="ownership-control">
+                            <input type="checkbox" class="ownership-checkbox"
+                                   ${userData.owned ? 'checked' : ''}
+                                   data-denko-id="${denko.id}">
+                            <label>所持</label>
+                        </div>
+                        <div class="level-control">
+                            <label>Lv:</label>
+                            <input type="number" class="level-input"
+                                   min="1" max="${DenkoManager.MAX_LEVEL}"
+                                   value="${userData.level || 1}"
+                                   ${!userData.owned ? 'disabled' : ''}
+                                   data-denko-id="${denko.id}">
+                        </div>
+                        <div class="class-control">
+                            <label>Class:</label>
+                            <input type="number" class="class-input"
+                                   min="1" max="12"
+                                   value="${userData.class || 1}"
+                                   ${!userData.owned ? 'disabled' : ''}
+                                   data-denko-id="${denko.id}">
+                        </div>
+                    </div>
+                </div>
+                <div class="denko-details">
+                    <div class="skill-info">
+                        <div class="skill-name">${this.escapeHtml(denko.skill_name)}</div>
+                        <div class="skill-effect">${this.escapeHtml(denko.skill_effect)}</div>
+                    </div>
                 </div>
             </div>
         `;
@@ -699,25 +695,19 @@ class DenkoManager {
         const messageDiv = document.createElement('div');
         messageDiv.className = `message ${type}`;
         messageDiv.textContent = message;
-        messageDiv.style.cssText = `
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 15px 20px;
-            border-radius: 8px;
-            color: white;
-            font-weight: bold;
-            z-index: 1000;
-            animation: slideIn 0.3s ease;
-            background: ${type === 'success' ? '#28a745' : '#dc3545'};
-        `;
         
         document.body.appendChild(messageDiv);
-        
+
         setTimeout(() => {
             messageDiv.style.animation = 'slideOut 0.3s ease';
             setTimeout(() => {
-                document.body.removeChild(messageDiv);
+                try {
+                    if (messageDiv.parentNode) {
+                        messageDiv.parentNode.removeChild(messageDiv);
+                    }
+                } catch (error) {
+                    console.error('メッセージ要素の削除に失敗しました:', error);
+                }
             }, 300);
         }, 3000);
     }
@@ -816,12 +806,12 @@ class DenkoManager {
         const yAxisMax = Math.ceil(maxCount / 5) * 5;
         const yAxisStep = yAxisMax / 5;
         
-        // 背景
-        ctx.fillStyle = '#ffffff';
+        // 背景（発車標パネル）
+        ctx.fillStyle = '#10171d';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
-        
+
         // グリッド線を描画
-        ctx.strokeStyle = '#e9ecef';
+        ctx.strokeStyle = 'rgba(232, 184, 74, 0.16)';
         ctx.lineWidth = 1;
         
         // 縦のグリッド線（レベル・10レベル刻み）
@@ -844,7 +834,7 @@ class DenkoManager {
         }
         
         // 軸を描画
-        ctx.strokeStyle = '#333';
+        ctx.strokeStyle = '#c9b896';
         ctx.lineWidth = 2;
         
         // X軸
@@ -861,7 +851,7 @@ class DenkoManager {
         
         // バーを描画
         const barWidth = chartWidth / maxLevel;
-        ctx.fillStyle = '#667eea';
+        ctx.fillStyle = '#e8b84a';
         
         levelCounts.forEach((count, index) => {
             if (count > 0) {
@@ -874,8 +864,8 @@ class DenkoManager {
         });
         
         // ラベルを描画
-        ctx.fillStyle = '#333';
-        ctx.font = '12px Arial';
+        ctx.fillStyle = '#e8dcc4';
+        ctx.font = '12px "Share Tech Mono", monospace';
         ctx.textAlign = 'center';
         
         // X軸ラベル（レベル）
@@ -895,7 +885,7 @@ class DenkoManager {
         
         // 軸タイトル
         ctx.textAlign = 'center';
-        ctx.font = 'bold 14px Arial';
+        ctx.font = '14px "Kosugi Maru", sans-serif';
         ctx.fillText('レベル', padding + chartWidth / 2, canvas.height - 10);
         
         ctx.save();
@@ -922,29 +912,6 @@ class DenkoManager {
             : { owned: false, level: 1, class: 1 };
     }
 }
-
-// アニメーション用CSS
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes slideIn {
-        from { transform: translateX(100%); opacity: 0; }
-        to { transform: translateX(0); opacity: 1; }
-    }
-    @keyframes slideOut {
-        from { transform: translateX(0); opacity: 1; }
-        to { transform: translateX(100%); opacity: 0; }
-    }
-    .no-results {
-        text-align: center;
-        padding: 40px;
-        color: #666;
-        font-size: 1.1rem;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
-`;
-document.head.appendChild(style);
 
 // アプリケーションの初期化
 document.addEventListener('DOMContentLoaded', () => {

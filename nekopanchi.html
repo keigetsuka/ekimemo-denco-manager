@@ -5,26 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ねこぱんち計算機 - 駅メモ！でんこ管理アプリ</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kosugi+Maru&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="atmosphere" aria-hidden="true">
+        <div class="atmosphere-tracks"></div>
+        <div class="atmosphere-grain"></div>
+    </div>
+    <div class="platform-stripe" aria-hidden="true"></div>
     <div class="container">
         <header class="header">
-            <h1>ねこぱんち計算機</h1>
-            <p>でんこの現在のレベル・経験値から、ねこぱんち使用後の獲得経験値と到達レベルを計算します</p>
-            <nav class="page-nav">
-                <a href="index.html" class="btn btn-secondary">← でんこ管理アプリに戻る</a>
-            </nav>
-            <div class="notice" style="background: #e3f2fd; padding: 10px; border-radius: 5px; margin-top: 10px; font-size: 0.9rem; color: #1565c0;">
-                <strong>📌 注意:</strong> 経験値データは
-                <a href="wiki/でんこ能力値一覧表.html" target="_blank" rel="noopener">でんこ能力値一覧表</a>
-                に基づきます。スキル効果等の増加は含みません。
+            <div class="header-board">
+                <div class="header-identity">
+                    <span class="route-badge" aria-hidden="true">猫</span>
+                    <div>
+                        <p class="header-kicker">Platform 02 · Exp Simulator</p>
+                        <h1>ねこぱんち計算機</h1>
+                    </div>
+                </div>
+                <p class="header-lead">現在のレベル・経験値から、ねこぱんち使用後の獲得経験値と到達レベルを計算します</p>
+                <nav class="page-nav">
+                    <a href="index.html" class="btn btn-secondary">← でんこ管理に戻る</a>
+                </nav>
+            </div>
+            <span class="board-live"><i></i> CALCULATING</span>
+            <div class="notice">
+                <div>
+                    <strong>注意:</strong> 経験値データは
+                    <a href="wiki/でんこ能力値一覧表.html" target="_blank" rel="noopener">でんこ能力値一覧表</a>
+                    に基づきます。スキル効果等の増加は含みません。
+                </div>
             </div>
         </header>
 
         <div class="calculator-panel">
             <section class="calculator-section">
-                <h2>入力</h2>
+                <h2>Input</h2>
                 <div class="calculator-form">
                     <div class="form-group">
                         <label for="current-level">今のでんこのレベル</label>
@@ -101,7 +120,7 @@
             <div id="error-message" class="error-message" hidden></div>
 
             <section id="result-section" class="calculator-section result-section">
-                <h2>計算結果</h2>
+                <h2>Result</h2>
                 <div class="result-grid">
                     <div class="result-card highlight">
                         <span class="result-label">獲得経験値</span>
