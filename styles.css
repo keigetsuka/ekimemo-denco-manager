@@ -784,6 +784,13 @@ a:hover {
     margin-left: auto;
 }
 
+.denko-stats {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+}
+
 .ownership-control,
 .level-control,
 .class-control {
@@ -1409,9 +1416,15 @@ a:hover {
         font-size: 0.68rem;
     }
 
-    /* 所持・Lv・Class をバッジと同じ行で折り返す */
+    /* 所持はバッジ行、Lv/Class は一段下げて横並びを維持 */
     .denko-controls {
         display: contents;
+    }
+
+    .denko-stats {
+        flex: 1 1 100%;
+        width: 100%;
+        gap: 8px;
     }
 
     .ownership-control,

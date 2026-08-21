@@ -495,21 +495,23 @@ class DenkoManager {
                                        data-denko-id="${denko.id}">
                                 <label>所持</label>
                             </div>
-                            <div class="level-control">
-                                <label>Lv:</label>
-                                <input type="number" class="level-input"
-                                       min="1" max="${DenkoManager.MAX_LEVEL}"
-                                       value="${userData.level || 1}"
-                                       ${!userData.owned ? 'disabled' : ''}
-                                       data-denko-id="${denko.id}">
-                            </div>
-                            <div class="class-control">
-                                <label>Class:</label>
-                                <input type="number" class="class-input"
-                                       min="1" max="12"
-                                       value="${userData.class || 1}"
-                                       ${!userData.owned ? 'disabled' : ''}
-                                       data-denko-id="${denko.id}">
+                            <div class="denko-stats">
+                                <div class="level-control">
+                                    <label>Lv:</label>
+                                    <input type="number" class="level-input"
+                                           min="1" max="${DenkoManager.MAX_LEVEL}"
+                                           value="${userData.level || 1}"
+                                           ${!userData.owned ? 'disabled' : ''}
+                                           data-denko-id="${denko.id}">
+                                </div>
+                                <div class="class-control">
+                                    <label>Class:</label>
+                                    <input type="number" class="class-input"
+                                           min="1" max="12"
+                                           value="${userData.class || 1}"
+                                           ${!userData.owned ? 'disabled' : ''}
+                                           data-denko-id="${denko.id}">
+                                </div>
                             </div>
                         </div>
                     </div>
