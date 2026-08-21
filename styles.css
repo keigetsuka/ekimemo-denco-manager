@@ -697,19 +697,15 @@ a:hover {
 
 .denko-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 12px;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 10px 12px;
 }
 
-.denko-basic-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    min-width: 0;
+.denko-meta {
+    display: contents;
 }
 
 .denko-names {
@@ -717,6 +713,7 @@ a:hover {
     flex-direction: column;
     gap: 2px;
     min-width: 0;
+    flex: 1 1 8rem;
 }
 
 .denko-name {
@@ -743,6 +740,8 @@ a:hover {
     font-size: 0.75rem;
     letter-spacing: 0.06em;
     color: #fff;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .denko-type {
@@ -782,6 +781,7 @@ a:hover {
     align-items: center;
     gap: 12px;
     flex-wrap: wrap;
+    margin-left: auto;
 }
 
 .ownership-control,
@@ -1329,24 +1329,138 @@ a:hover {
     }
 
     .denko-item {
-        grid-template-columns: 54px 1fr;
+        grid-template-columns: 40px 1fr;
     }
 
+    .denko-list {
+        gap: 10px;
+    }
+
+    .ticket-stub::after {
+        right: -5px;
+        width: 10px;
+        background: radial-gradient(circle at 5px 8px, var(--ink) 4px, transparent 4.5px) 0 0 / 10px 14px;
+    }
+
+    .denko-item.not-owned .ticket-stub::after {
+        background: radial-gradient(circle at 5px 8px, #1a1a18 4px, transparent 4.5px) 0 0 / 10px 14px;
+    }
+
+    .ticket-body {
+        padding: 10px 10px 10px 14px;
+    }
+
+    .denko-id {
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+    }
+
+    /* 顔写真＋名前を上段、タイプ/属性/所持/Lv/Classを下段にまとめて高さを圧縮 */
     .denko-header {
-        flex-direction: column;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        grid-template-areas:
+            "portrait names"
+            "meta meta";
+        align-items: center;
+        gap: 6px 8px;
+        margin-bottom: 6px;
     }
 
+    .denko-header:not(:has(.denko-portrait)) {
+        grid-template-areas:
+            "names names"
+            "meta meta";
+    }
+
+    .denko-portrait {
+        grid-area: portrait;
+        width: 52px;
+        height: 52px;
+        box-shadow: 2px 2px 0 rgba(27, 23, 18, 0.18);
+    }
+
+    .denko-names {
+        grid-area: names;
+        padding-right: 36px;
+    }
+
+    .denko-name {
+        font-size: 1.15rem;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+
+    .denko-name-en {
+        font-size: 0.68rem;
+    }
+
+    .denko-meta {
+        grid-area: meta;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px 8px;
+    }
+
+    .denko-type,
+    .denko-attribute {
+        padding: 2px 7px;
+        font-size: 0.68rem;
+    }
+
+    /* 所持・Lv・Class をバッジと同じ行で折り返す */
     .denko-controls {
-        width: 100%;
-        justify-content: space-between;
+        display: contents;
+    }
+
+    .ownership-control,
+    .level-control,
+    .class-control {
+        gap: 4px;
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+
+    .ownership-checkbox {
+        width: 16px;
+        height: 16px;
+    }
+
+    .level-input,
+    .class-input {
+        width: 52px;
+        padding: 4px 2px;
+        font-size: 0.85rem;
+    }
+
+    .denko-details {
+        margin-top: 6px;
+        padding-top: 8px;
+    }
+
+    .skill-info {
+        padding: 8px 10px;
+    }
+
+    .skill-name {
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+        line-height: 1.35;
+    }
+
+    .skill-effect {
+        font-size: 0.8rem;
+        line-height: 1.45;
     }
 
     .denko-item.owned .ticket-body::after,
     .denko-item.not-owned .ticket-body::after {
-        font-size: 0.78rem;
-        top: 8px;
-        right: 8px;
+        font-size: 0.62rem;
+        top: 6px;
+        right: 6px;
+        padding: 3px 5px;
+        opacity: 0.32;
     }
 
     .data-management {
@@ -1389,10 +1503,25 @@ a:hover {
         grid-template-columns: 1fr;
     }
 
-    .denko-basic-info {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+    .denko-item {
+        grid-template-columns: 32px 1fr;
+    }
+
+    .denko-portrait {
+        width: 44px;
+        height: 44px;
+    }
+
+    .denko-name {
+        font-size: 1.05rem;
+    }
+
+    .denko-names {
+        padding-right: 28px;
+    }
+
+    .ticket-body {
+        padding: 8px 8px 8px 12px;
     }
 }
 

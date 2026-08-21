@@ -480,37 +480,37 @@ class DenkoManager {
             </div>
             <div class="ticket-body">
                 <div class="denko-header">
-                    <div class="denko-basic-info">
-                        ${portraitHtml}
-                        <span class="denko-names">
-                            <span class="denko-name">${this.escapeHtml(denko.name)}</span>
-                            ${nameEnHtml}
-                        </span>
+                    ${portraitHtml}
+                    <span class="denko-names">
+                        <span class="denko-name">${this.escapeHtml(denko.name)}</span>
+                        ${nameEnHtml}
+                    </span>
+                    <div class="denko-meta">
                         <span class="denko-type" data-type="${this.escapeHtml(denko.type)}">${this.escapeHtml(denko.type)}</span>
                         <span class="denko-attribute ${this.escapeHtml(denko.attribute)}">${this.escapeHtml(denko.attribute)}</span>
-                    </div>
-                    <div class="denko-controls">
-                        <div class="ownership-control">
-                            <input type="checkbox" class="ownership-checkbox"
-                                   ${userData.owned ? 'checked' : ''}
-                                   data-denko-id="${denko.id}">
-                            <label>所持</label>
-                        </div>
-                        <div class="level-control">
-                            <label>Lv:</label>
-                            <input type="number" class="level-input"
-                                   min="1" max="${DenkoManager.MAX_LEVEL}"
-                                   value="${userData.level || 1}"
-                                   ${!userData.owned ? 'disabled' : ''}
-                                   data-denko-id="${denko.id}">
-                        </div>
-                        <div class="class-control">
-                            <label>Class:</label>
-                            <input type="number" class="class-input"
-                                   min="1" max="12"
-                                   value="${userData.class || 1}"
-                                   ${!userData.owned ? 'disabled' : ''}
-                                   data-denko-id="${denko.id}">
+                        <div class="denko-controls">
+                            <div class="ownership-control">
+                                <input type="checkbox" class="ownership-checkbox"
+                                       ${userData.owned ? 'checked' : ''}
+                                       data-denko-id="${denko.id}">
+                                <label>所持</label>
+                            </div>
+                            <div class="level-control">
+                                <label>Lv:</label>
+                                <input type="number" class="level-input"
+                                       min="1" max="${DenkoManager.MAX_LEVEL}"
+                                       value="${userData.level || 1}"
+                                       ${!userData.owned ? 'disabled' : ''}
+                                       data-denko-id="${denko.id}">
+                            </div>
+                            <div class="class-control">
+                                <label>Class:</label>
+                                <input type="number" class="class-input"
+                                       min="1" max="12"
+                                       value="${userData.class || 1}"
+                                       ${!userData.owned ? 'disabled' : ''}
+                                       data-denko-id="${denko.id}">
+                            </div>
                         </div>
                     </div>
                 </div>
