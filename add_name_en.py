@@ -83,6 +83,7 @@ NAME_EN_OVERRIDE = {
     'ナディア・ヴォヤジャー': 'Nadia Voyager',
     'カフラマーナ・ケニトラ': 'Kahramana Kenitra',
     'ジャミラ・ラバト': 'Jamila Rabat',
+    '中ふ頭ななえ': 'Nakafuto Nanae',
 }
 
 # かな→ローマ字の後処理（駅名標・通例に合わせる）
